@@ -1,0 +1,100 @@
+/* ÉMILIE NATURELLE — COLOR TOKENS
+   Naturopathy & holistic-wellness brand (Émilie Gendron, emilienaturelle.ca).
+   Palette taken verbatim from the live site's Squarespace settings:
+     • White        #FFFFFF   ground
+     • Pale lemon   #FCFEE6   warm light sections
+     • Pale green   #E3F3CD   soft accent panels
+     • Deep navy    #171D3A   text, dark sections, primary actions
+   Fresh, airy and calm. Navy is the anchor; green & lemon are soft accents.
+   ------------------------------------------------------------------ */
+:root {
+  /* ---- Neutrals (white / lemon → navy ink) ---- */
+  --cream-50:  #FFFFFF;  /* white — purest ground */
+  --cream-100: #FCFEE6;  /* pale lemon — default warm page ground */
+  --cream-200: #F4F6DC;  /* soft lemon — sunken surfaces */
+  --sand-300:  #E4E7C9;  /* borders / dividers on light */
+  --taupe-400: #C5CAA6;  /* muted decorative, disabled fill */
+  --stone-500: #7C8274;  /* muted/secondary text (warm green-grey) */
+  --ink-600:   #515877;  /* tertiary text (navy-grey) */
+  --ink-700:   #2B3252;  /* body text (navy) */
+  --ink-800:   #171D3A;  /* headings — BRAND NAVY */
+  --ink-900:   #11152B;  /* strongest ink */
+
+  /* ---- Green (soft accent — the brand's pale green) ---- */
+  --sage-50:  #F3F9E9;
+  --sage-100: #E3F3CD;  /* BRAND pale green (accent panels) */
+  --sage-200: #D0E8B2;
+  --sage-300: #B7D98E;
+  --sage-400: #9AC567;
+  --sage-500: #7DAD47;  /* mid green — links, small accents, secondary CTA */
+  --sage-600: #668F39;
+  --sage-700: #51712E;
+  --sage-800: #3D5424;
+  --sage-900: #2E3F1B;
+
+  /* ---- Citron (warm secondary accent, from the lemon swatch) ---- */
+  --clay-50:  #FCFEE6;
+  --clay-100: #F6FAC6;
+  --clay-200: #ECF2A0;
+  --clay-300: #DDE878;
+  --clay-400: #CBD751;
+  --clay-500: #B0BE38;  /* citron */
+  --clay-600: #8D9A2C;
+  --clay-700: #6B7522;
+
+  /* ---- Mist (soft neutral tertiary) ---- */
+  --blush-100: #EEF1E5;
+  --blush-300: #D7DDC9;
+  --blush-500: #B9C1A6;
+
+  /* ---- Semantic hues (muted, natural) ---- */
+  --green-success: #5E8A36;
+  --green-success-soft: #E3F1CE;
+  --red-error:     #C05A4A;
+  --red-error-soft:#F4E0DB;
+  --amber-warning: #C2A23E;
+  --amber-warning-soft: #F3EDCF;
+  --slate-info:    #3A4263;
+  --slate-info-soft: #E2E5EE;
+
+  --white: #FFFFFF;
+  --pure-black: #0E1124;
+
+  /* ================= SEMANTIC ALIASES ================= */
+
+  /* Surfaces */
+  --surface-page:    var(--cream-100);  /* pale lemon ground */
+  --surface-raised:  var(--cream-50);   /* white */
+  --surface-card:    var(--white);
+  --surface-sunken:  var(--cream-200);
+  --surface-inverse: var(--ink-800);    /* navy */
+  --surface-sage:    var(--sage-100);   /* pale green panel */
+  --surface-clay:    var(--clay-50);
+
+  /* Text */
+  --text-strong:    var(--ink-900);
+  --text-heading:   var(--ink-800);     /* navy */
+  --text-body:      var(--ink-700);
+  --text-muted:     var(--stone-500);
+  --text-tertiary:  var(--ink-600);
+  --text-inverse:   var(--cream-50);    /* white on navy */
+  --text-on-sage:   var(--cream-50);    /* light text on the navy primary button */
+  --text-on-clay:   var(--ink-900);     /* navy text on green/citron secondary */
+  --text-link:      var(--sage-700);
+
+  /* Borders & dividers */
+  --border-subtle:  var(--sand-300);
+  --border-default: var(--taupe-400);
+  --border-strong:  var(--ink-700);
+  --divider:        var(--cream-200);
+
+  /* Brand */
+  --brand-primary:        var(--ink-800);   /* NAVY — primary CTA */
+  --brand-primary-hover:  var(--ink-900);
+  --brand-primary-press:  var(--pure-black);
+  --brand-secondary:      var(--sage-500);  /* mid green — secondary CTA */
+  --brand-secondary-hover:var(--sage-600);
+
+  /* Focus ring */
+  --focus-ring: var(--sage-400);
+}
