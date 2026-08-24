@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/milie-naturelle-design-system-ec0568ee-2197-45ce-8437-edd3852795d0/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/milie-naturelle-design-system-ec0568ee-2197-45ce-8437-edd3852795d0/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/milie-naturelle-design-system-ec0568ee-2197-45ce-8437-edd3852795d0/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/milie-naturelle-design-system-ec0568ee-2197-45ce-8437-edd3852795d0/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/milie-naturelle-design-system-ec0568ee-2197-45ce-8437-edd3852795d0/tokens/base.css">
+  <link rel="stylesheet" href="_ds/milie-naturelle-design-system-ec0568ee-2197-45ce-8437-edd3852795d0/components/components.css">
+  <link rel="stylesheet" href="_ds/milie-naturelle-design-system-ec0568ee-2197-45ce-8437-edd3852795d0/styles.css">
+  <script src="_ds/milie-naturelle-design-system-ec0568ee-2197-45ce-8437-edd3852795d0/_ds_bundle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <style>
+    html, body { margin: 0; padding: 0; background: #11152B; }
+    a { color: #9AC567; text-decoration: none; }
+    a:hover { color: #B7D98E; }
+    ::selection { background: #E3F3CD; color: #171D3A; }
+    @keyframes filmCue { 0% { transform: scaleY(0); transform-origin: top; } 50% { transform: scaleY(1); transform-origin: top; } 51% { transform-origin: bottom; } 100% { transform: scaleY(0); transform-origin: bottom; } }
+  </style>
+</helmet>
+<div style="background: #11152B; color: #FCFEE6; font-family: 'Jost', sans-serif; overflow-x: clip;">
+  <div data-progress="" style="position: fixed; top: 0; left: 0; right: 0; height: 2px; background: #9AC567; transform: scaleX(0); transform-origin: left center; z-index: 40;"></div>
+
+  <section data-open="" data-screen-label="Ouverture" style="position: relative; height: 190vh;">
+    <div style="position: sticky; top: 0; height: 100vh; min-height: 520px; overflow: hidden; background: #11152B;">
+      <video data-open-video="" data-mute="" src="https://d8j0ntlcm91z4.cloudfront.net/user_3DT2htyCp6A1GNlzF6OYheF1hrj/hf_20260824_214722_86f8880c-e123-4137-8b92-fa8a4cf13187.mp4" autoPlay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsInline="{{ true }}" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0;"></video>
+      <div data-open-veil="" style="position: absolute; inset: 0; background: #11152B; opacity: 0.42;"></div>
+      <div data-open-core="" style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 min(6vw, 72px); z-index: 2;">
+        <p data-open-eyebrow="" style="margin: 0 0 26px; font-size: 12px; letter-spacing: 0.42em; text-transform: uppercase; color: #FCFEE6; opacity: 0; font-weight: 500;">Émilie Naturelle présente</p>
+        <span data-open-beam="" style="display: block; width: min(340px, 56vw); height: 1px; background: #D0E8B2; transform: scaleX(0); margin-bottom: 34px;"></span>
+        <h1 data-open-title="" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(52px, 10.5vw, 148px); line-height: 1.02; color: #FCFEE6; letter-spacing: -0.02em; opacity: 0; max-width: 10ch;">Ta zone de <span style="font-style: italic; color: #D0E8B2;">pouvoir</span></h1>
+        <p data-open-sub="" style="margin: 34px 0 0; font-size: clamp(16px, 1.7vw, 21px); line-height: 1.65; color: #FCFEE6; opacity: 0; max-width: 44ch;">Tu ne contrôles pas tes hormones. Tu contrôles ce qui les entoure. Et c'est là que tout se joue.</p>
+        <div data-open-cta="" style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin-top: 42px; opacity: 0;">
+          <x-import component-from-global-scope="MilieNaturelleDesignSystem_ec0568.Button" onClick="{{ goEnd }}" hint-size="220px,48px">Découvrir le parcours</x-import>
+          <span style="font-size: 13px; letter-spacing: 0.06em; color: #FCFEE6; opacity: 0.85;">30+ leçons · À ton rythme · Accès à vie</span>
+        </div>
+      </div>
+      <div data-open-cue="" style="position: absolute; bottom: 26px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; z-index: 3; opacity: 0;">
+        <span style="font-size: 10px; letter-spacing: 0.32em; text-transform: uppercase; color: #FCFEE6; opacity: 0.75;">Le film commence</span>
+        <span style="width: 1px; height: 40px; background: #FCFEE6; display: block; animation: filmCue 2.4s ease-in-out infinite;"></span>
+      </div>
+    </div>
+  </section>
+
+  <section data-scene="" data-screen-label="Chapitre I - La reconnaissance" style="position: relative; height: 440vh;">
+    <div style="position: sticky; top: 0; height: 100vh; min-height: 520px; overflow: hidden; background: #11152B;">
+      <video data-mute="" src="https://d8j0ntlcm91z4.cloudfront.net/user_3DT2htyCp6A1GNlzF6OYheF1hrj/hf_20260824_214722_5d75b437-0d21-4a22-94f9-bced47aa8ba7.mp4" autoPlay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsInline="{{ true }}" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.5;"></video>
+      <div style="position: absolute; inset: 0; background: #11152B; opacity: 0.45;"></div>
+      <p style="position: absolute; top: 34px; left: 50%; transform: translateX(-50%); margin: 0; font-size: 11px; letter-spacing: 0.38em; text-transform: uppercase; color: #9AC567; z-index: 3; white-space: nowrap;">Chapitre I - La reconnaissance</p>
+      <div data-sub="" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 min(8vw, 96px); z-index: 2;"><p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(28px, 4.6vw, 60px); line-height: 1.3; color: #FCFEE6; max-width: 24ch;">Tu manges bien. Tu bouges. Et pourtant, une prise de poids que <span style="font-style: italic; color: #D0E8B2;">rien n'explique</span>.</p></div>
+      <div data-sub="" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 min(8vw, 96px); z-index: 2;"><p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(28px, 4.6vw, 60px); line-height: 1.3; color: #FCFEE6; max-width: 24ch;">Le stress te rentre dedans. L'anxiété est devenue <span style="font-style: italic; color: #D0E8B2;">la trame de fond</span> de tes journées.</p></div>
+      <div data-sub="" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 min(8vw, 96px); z-index: 2;"><p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(28px, 4.6vw, 60px); line-height: 1.3; color: #FCFEE6; max-width: 24ch;">Tu te réveilles <span style="font-style: italic; color: #D0E8B2;">déjà fatiguée</span>.</p></div>
+      <div data-sub="" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 min(8vw, 96px); z-index: 2;"><p style="margin: 0; font-size: clamp(17px, 1.9vw, 23px); line-height: 1.7; color: #FCFEE6; opacity: 0.92; max-width: 40ch;">Beaucoup de femmes vivent ces changements à partir de 35 ans. Souvent les trois en même temps.</p></div>
+    </div>
+  </section>
+
+  <section data-scene="" data-screen-label="Chapitre II - Le renversement" style="position: relative; height: 540vh;">
+    <div style="position: sticky; top: 0; height: 100vh; min-height: 520px; overflow: hidden; background: #171D3A;">
+      <p style="position: absolute; top: 34px; left: 50%; transform: translateX(-50%); margin: 0; font-size: 11px; letter-spacing: 0.38em; text-transform: uppercase; color: #9AC567; z-index: 3; white-space: nowrap;">Chapitre II - Le renversement</p>
+      <div data-sub="" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 min(8vw, 96px); z-index: 2;"><p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(28px, 4.6vw, 60px); line-height: 1.3; color: #FCFEE6; max-width: 24ch;">On te dit que c'est hormonal. Qu'il faut <span style="font-style: italic; color: #D0E8B2;">attendre que ça passe</span>.</p></div>
+      <div data-sub="" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 min(8vw, 96px); z-index: 2;"><p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 500; font-size: clamp(28px, 4.6vw, 60px); line-height: 1.3; color: #D0E8B2; max-width: 24ch;">C'est incomplet, et c'est décourageant.</p></div>
+      <div data-sub="" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 min(8vw, 96px); z-index: 2;"><p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(26px, 4vw, 52px); line-height: 1.35; color: #FCFEE6; max-width: 26ch;">Tes hormones répondent à ton sommeil, ton alimentation, ton système nerveux, <span style="font-style: italic; color: #D0E8B2;">ta lumière, ton mouvement</span>.</p></div>
+      <div data-sub="" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 min(8vw, 96px); z-index: 2;"><p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(28px, 4.6vw, 60px); line-height: 1.3; color: #FCFEE6; max-width: 24ch;">Ce sont ces choses-là que <span style="font-style: italic; color: #D0E8B2;">tu peux influencer</span>.</p></div>
+      <div data-sub="" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 min(8vw, 96px); z-index: 2;"><p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(30px, 5vw, 66px); line-height: 1.25; color: #FCFEE6; max-width: 22ch;">C'est ce qu'on appelle <span style="font-style: italic; font-weight: 600; color: #B7D98E; border-bottom: 1px solid #7DAD47; padding-bottom: 3px;">ta zone de pouvoir</span>.</p></div>
+    </div>
+  </section>
+
+  <section data-scene="" data-screen-label="Chapitre III - Le constat" style="position: relative; height: 440vh;">
+    <div style="position: sticky; top: 0; height: 100vh; min-height: 520px; overflow: hidden; background: #11152B;">
+      <p style="position: absolute; top: 34px; left: 50%; transform: translateX(-50%); margin: 0; font-size: 11px; letter-spacing: 0.38em; text-transform: uppercase; color: #9AC567; z-index: 3; white-space: nowrap;">Chapitre III - Le constat</p>
+      <div data-sub="" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 min(8vw, 96px); z-index: 2;"><p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 500; font-size: clamp(30px, 5vw, 66px); line-height: 1.25; color: #FCFEE6; max-width: 20ch;">Ce n'est pas une méthode. C'est un constat.</p></div>
+      <div data-sub="" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 min(8vw, 96px); z-index: 2;"><p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(26px, 4vw, 52px); line-height: 1.35; color: #FCFEE6; max-width: 26ch;">Il y a ce que tu ne contrôles pas : tes fluctuations hormonales, ton histoire.</p></div>
+      <div data-sub="" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 min(8vw, 96px); z-index: 2;"><p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(26px, 4vw, 52px); line-height: 1.35; color: #FCFEE6; max-width: 26ch;">Et il y a tout le reste : le contexte dans lequel ces hormones travaillent. <span style="font-style: italic; color: #D0E8B2;">C'est toi qui le construis, chaque jour.</span></p></div>
+      <div data-sub="" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 min(8vw, 96px); z-index: 2;"><p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(26px, 4vw, 52px); line-height: 1.35; color: #FCFEE6; max-width: 26ch;"><span style="font-style: italic; font-weight: 600; color: #B7D98E; border-bottom: 1px solid #7DAD47; padding-bottom: 2px;">Ta zone de pouvoir</span> : les endroits où un petit ajustement change réellement quelque chose. Tout ce parcours sert à trouver les tiens.</p></div>
+    </div>
+  </section>
+
+  <section data-frames="" data-screen-label="Chapitre IV - Les sept piliers" style="position: relative; height: 660vh;">
+    <div style="position: sticky; top: 0; height: 100vh; min-height: 520px; overflow: hidden; background: #11152B;">
+      <p style="position: absolute; top: 34px; left: 50%; transform: translateX(-50%); margin: 0; font-size: 11px; letter-spacing: 0.38em; text-transform: uppercase; color: #9AC567; z-index: 3; white-space: nowrap;">Chapitre IV - Les sept piliers</p>
+      <sc-for list="{{ pillars }}" as="p" hint-placeholder-count="0">
+        <div data-frame="" style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: clamp(14px, 2.4vh, 26px); padding: 72px min(6vw, 72px) 64px; z-index: 2;">
+          <div role="img" aria-label="{{ p.name }}" style="width: min(320px, 60vw); height: min(400px, 40vh); background-image: {{ p.bg }}; background-size: cover; background-position: center; border-radius: 16px;"></div>
+          <span style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: clamp(20px, 2vw, 26px); color: #9AC567;">{{ p.num }}</span>
+          <h3 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(28px, 4.2vw, 52px); line-height: 1.05; color: #FCFEE6;">{{ p.name }}</h3>
+          <p style="margin: 0; font-size: clamp(15px, 1.5vw, 18px); line-height: 1.6; color: #FCFEE6; opacity: 0.85; max-width: 42ch;">{{ p.line }}</p>
+        </div>
+      </sc-for>
+      <div style="position: absolute; bottom: 26px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 16px; z-index: 3;">
+        <span data-frame-count="" style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 20px; color: #FCFEE6; min-width: 68px; text-align: right;">01 / 07</span>
+        <span style="display: block; width: clamp(80px, 14vw, 180px); height: 1px; background: #2B3252; position: relative; overflow: hidden;"><span data-frame-bar="" style="position: absolute; inset: 0; background: #9AC567; transform: scaleX(0); transform-origin: left center; display: block;"></span></span>
+      </div>
+    </div>
+  </section>
+
+  <section data-scene="" data-screen-label="Chapitre V - La question" style="position: relative; height: 360vh;">
+    <div style="position: sticky; top: 0; height: 100vh; min-height: 520px; overflow: hidden; background: #171D3A;">
+      <p style="position: absolute; top: 34px; left: 50%; transform: translateX(-50%); margin: 0; font-size: 11px; letter-spacing: 0.38em; text-transform: uppercase; color: #9AC567; z-index: 3; white-space: nowrap;">Chapitre V - La question</p>
+      <div data-sub="" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 min(8vw, 96px); z-index: 2;"><p style="margin: 0; font-size: clamp(17px, 1.9vw, 23px); line-height: 1.7; color: #FCFEE6; opacity: 0.92; max-width: 40ch;">La plupart des femmes se demandent : qu'est-ce qui me manque ? Quel cadre est-ce que je dois m'imposer ? Les deux questions fatiguent.</p></div>
+      <div data-sub="" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 min(8vw, 96px); z-index: 2;"><p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 500; font-size: clamp(34px, 5.6vw, 76px); line-height: 1.2; color: #FCFEE6; max-width: 20ch;">Qu'est-ce que mon corps essaie de <span style="color: #D0E8B2;">me dire</span> ?</p></div>
+      <div data-sub="" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 min(8vw, 96px); z-index: 2;"><p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(26px, 4vw, 52px); line-height: 1.35; color: #FCFEE6; max-width: 26ch;">Tes symptômes sont des signaux. Chacun pointe vers un endroit de <span style="font-style: italic; font-weight: 600; color: #B7D98E; border-bottom: 1px solid #7DAD47; padding-bottom: 2px;">ta zone de pouvoir</span> que tu n'as pas encore identifié.</p></div>
+    </div>
+  </section>
+
+  <section data-screen-label="Plein jour - le parcours" style="background: #FCFEE6; color: #2B3252; padding: clamp(110px, 17vh, 190px) min(6vw, 72px);">
+    <div style="max-width: 920px; margin: 0 auto;">
+      <p data-reveal="" style="margin: 0 0 20px; font-size: 11px; letter-spacing: 0.38em; text-transform: uppercase; color: #7C8274; font-weight: 500;">Plein jour - le parcours</p>
+      <h2 data-reveal="" style="margin: 0 0 clamp(36px, 5vh, 52px); font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(34px, 4.6vw, 62px); line-height: 1.08; color: #171D3A;">Comment <span style="font-style: italic; color: #51712E;">ça se passe</span></h2>
+      <p data-reveal="" style="margin: 0 0 clamp(48px, 7vh, 72px); font-size: 18px; line-height: 1.8; color: #2B3252; max-width: 62ch;">Chaque leçon t'explique un mécanisme concret, puis te propose un exercice d'observation. Tu n'apprends pas quoi faire. Tu apprends à voir ce que ton corps te dit déjà.</p>
+      <div style="display: flex; flex-direction: column;">
+        <p data-reveal="" style="margin: 0; padding: 26px 0; border-top: 1px solid #E4E7C9; font-family: 'Cormorant Garamond', serif; font-size: clamp(21px, 2.2vw, 27px); color: #171D3A;">30+ leçons, organisées autour des sept piliers</p>
+        <p data-reveal="" style="margin: 0; padding: 26px 0; border-top: 1px solid #E4E7C9; font-family: 'Cormorant Garamond', serif; font-size: clamp(21px, 2.2vw, 27px); color: #171D3A;">Leçons en texte, entre 10 et 15 minutes chacune</p>
+        <p data-reveal="" style="margin: 0; padding: 26px 0; border-top: 1px solid #E4E7C9; border-bottom: 1px solid #E4E7C9; font-family: 'Cormorant Garamond', serif; font-size: clamp(21px, 2.2vw, 27px); color: #171D3A;">Accès à vie, tout disponible dès l'inscription</p>
+      </div>
+      <p data-reveal="" style="margin: clamp(36px, 5vh, 52px) 0 0; font-size: 17px; color: #7C8274;">Tu avances depuis chez toi, sans horaire imposé.</p>
+    </div>
+  </section>
+
+  <section data-screen-label="Pour qui" style="background: #FCFEE6; color: #2B3252; padding: 0 min(6vw, 72px) clamp(100px, 15vh, 170px);">
+    <div style="max-width: 920px; margin: 0 auto; display: flex; flex-direction: column; gap: clamp(64px, 9vh, 100px);">
+      <div data-reveal="">
+        <p style="margin: 0 0 32px; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: #51712E; font-weight: 600;">Pour toi si</p>
+        <div style="display: flex; flex-direction: column;">
+          <p style="margin: 0; padding: 22px 0; border-top: 1px solid #E4E7C9; font-family: 'Cormorant Garamond', serif; font-size: clamp(20px, 2vw, 25px); line-height: 1.5; color: #171D3A; max-width: 60ch;">Tu veux comprendre ce qui se passe dans ton corps, pas seulement recevoir des consignes</p>
+          <p style="margin: 0; padding: 22px 0; border-top: 1px solid #E4E7C9; font-family: 'Cormorant Garamond', serif; font-size: clamp(20px, 2vw, 25px); line-height: 1.5; color: #171D3A; max-width: 60ch;">Tu as essayé des choses qui fonctionnaient pour d'autres, sans résultat pour toi</p>
+          <p style="margin: 0; padding: 22px 0; border-top: 1px solid #E4E7C9; border-bottom: 1px solid #E4E7C9; font-family: 'Cormorant Garamond', serif; font-size: clamp(20px, 2vw, 25px); line-height: 1.5; color: #171D3A; max-width: 60ch;">Tu cherches une base solide avant une consultation, ou entre deux</p>
+        </div>
+      </div>
+      <div data-reveal="">
+        <p style="margin: 0 0 32px; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: #7C8274; font-weight: 600;">Pas pour toi si</p>
+        <div style="display: flex; flex-direction: column;">
+          <p style="margin: 0; padding: 18px 0; border-top: 1px solid #E4E7C9; font-size: 17px; line-height: 1.7; color: #7C8274; max-width: 62ch;">Tu cherches un protocole précis à suivre à la lettre, ou une solution rapide : ce parcours demande de l'observation avant l'action</p>
+          <p style="margin: 0; padding: 18px 0; border-top: 1px solid #E4E7C9; border-bottom: 1px solid #E4E7C9; font-size: 17px; line-height: 1.7; color: #7C8274; max-width: 62ch;">Tu vis des symptômes intenses ou inquiétants - commence par consulter</p>
+        </div>
+        <p style="margin: clamp(36px, 5vh, 52px) 0 0; font-size: 17px; line-height: 1.75; color: #2B3252; max-width: 62ch;">Ce n'est pas un protocole, et ça ne remplace pas un suivi personnalisé. L'autonomie ne remplace pas l'accompagnement. Elle le rend plus puissant.</p>
+      </div>
+      <div data-reveal="" style="border: 1px dashed #C5CAA6; border-radius: 10px; padding: clamp(44px, 6vh, 64px) clamp(28px, 5vw, 64px); text-align: center;">
+        <p style="margin: 0 0 18px; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: #7C8274; font-weight: 500;">Qui t'accompagne</p>
+        <p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: clamp(20px, 2vw, 26px); color: #B9C1A6; font-style: italic;">Bio d'Émilie - à venir</p>
+      </div>
+    </div>
+  </section>
+
+  <section data-conversion="" data-screen-label="Générique - conversion" style="background: #E3F3CD; color: #2B3252; padding: clamp(120px, 18vh, 200px) min(6vw, 72px); text-align: center;">
+    <div style="max-width: 680px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 32px;">
+      <p data-reveal="" style="margin: 0; font-size: 11px; letter-spacing: 0.42em; text-transform: uppercase; color: #51712E; font-weight: 600;">Générique de fin</p>
+      <p data-reveal="" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(34px, 5vw, 64px); line-height: 1.15; color: #171D3A; max-width: 20ch;">À la fin, tu sauras lire ton propre système. Cette lecture-là, c'est <span style="font-style: italic; font-weight: 600; color: #51712E; border-bottom: 1px solid #9AC567; padding-bottom: 2px;">ta zone de pouvoir</span>.</p>
+      <p data-reveal="" style="margin: 0; display: inline-block; border: 1px dashed #9AC567; border-radius: 6px; padding: 13px 30px; font-family: 'Cormorant Garamond', serif; font-size: 23px; font-style: italic; color: #7C8274;">Prix - à venir</p>
+      <div data-reveal="" style="display: flex; flex-direction: column; align-items: center; gap: 18px;">
+        <x-import component-from-global-scope="MilieNaturelleDesignSystem_ec0568.Button" onClick="{{ goTop }}" hint-size="280px,48px">Entrer dans ta zone de pouvoir</x-import>
+        <span style="font-size: 14px; color: #7C8274;">Accès à vie, tout disponible dès l'inscription.</span>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background: #171D3A; padding: 44px min(6vw, 72px); display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;">
+    <span style="font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; color: #FCFEE6;">Émilie Naturelle.</span>
+    <span style="font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1A6;">Naturopathe certifiée · Coach santé</span>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;motionIntensity&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;cinematique&quot;, &quot;calme&quot;], &quot;default&quot;: &quot;cinematique&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Motion&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    this._dead = false;
+    this._epoch = (window.__filmEpoch = (window.__filmEpoch || 0) + 1);
+    this._tryInit(0);
+  }
+  componentWillUnmount() { this._dead = true; }
+  _tryInit(n) {
+    if (this._dead) { return; }
+    if (!window.gsap) {
+      if (n < 80) { setTimeout(() => this._tryInit(n + 1), 150); }
+      return;
+    }
+    this._init();
+  }
+  _clamp(v) { return Math.min(1, Math.max(0, v)); }
+  _init() {
+    if (this._dead) { return; }
+    const gsap = window.gsap;
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const calme = (this.props.motionIntensity ?? 'cinematique') === 'calme';
+    const staticMode = reduced || calme;
+    // Opening (time-based, proven to work)
+    if (!staticMode) {
+      gsap.timeline({ delay: 0.2 })
+        .to('[data-open-beam]', { scaleX: 1, duration: 1.0, ease: 'power2.inOut' }, 0)
+        .to('[data-open-eyebrow]', { opacity: 1, duration: 0.9, ease: 'power2.out' }, 0.3)
+        .fromTo('[data-open-title]', { opacity: 0, scale: 1.06, filter: 'blur(16px)' }, { opacity: 1, scale: 1, filter: 'blur(0px)', duration: 1.5, ease: 'power3.out' }, 0.6)
+        .to('[data-open-video]', { opacity: 1, duration: 1.8, ease: 'power2.inOut' }, 0.8)
+        .to('[data-open-sub]', { opacity: 1, duration: 1.0, ease: 'power2.out' }, 1.5)
+        .to('[data-open-cta]', { opacity: 1, duration: 1.0, ease: 'power2.out' }, 1.9)
+        .to('[data-open-cue]', { opacity: 1, duration: 0.8 }, 2.3);
+    } else {
+      document.querySelectorAll('[data-open-eyebrow],[data-open-title],[data-open-sub],[data-open-cta],[data-open-video]').forEach((el) => { el.style.opacity = '1'; });
+      const beam = document.querySelector('[data-open-beam]'); if (beam) { beam.style.transform = 'scaleX(1)'; }
+    }
+    if (staticMode) {
+      // Flatten scenes: every subtitle/frame stacked and visible, no scrub
+      document.querySelectorAll('[data-scene],[data-frames],[data-open]').forEach((sec) => {
+        sec.style.height = 'auto';
+        const stick = sec.firstElementChild;
+        if (stick) { stick.style.position = 'static'; stick.style.height = 'auto'; stick.style.paddingTop = '72px'; stick.style.paddingBottom = '72px'; }
+      });
+      document.querySelectorAll('[data-sub],[data-frame]').forEach((el) => { el.style.position = 'static'; el.style.opacity = '1'; el.style.padding = '40px 6vw'; });
+      document.querySelectorAll('[data-reveal]').forEach((el) => { el.style.opacity = '1'; });
+      this._startLoop(true);
+      return;
+    }
+    // Prepare scroll-driven scenes
+    this._scenes = Array.prototype.map.call(document.querySelectorAll('[data-scene],[data-frames]'), (sec) => ({
+      sec: sec, items: Array.prototype.slice.call(sec.querySelectorAll('[data-sub],[data-frame]')),
+      isFrames: sec.hasAttribute('data-frames'),
+      counter: sec.querySelector('[data-frame-count]'), bar: sec.querySelector('[data-frame-bar]')
+    }));
+    this._openSec = document.querySelector('[data-open]');
+    this._reveals = Array.prototype.slice.call(document.querySelectorAll('[data-reveal]'));
+    this._reveals.forEach((el) => {
+      const r = el.getBoundingClientRect();
+      if (r.top > window.innerHeight * 0.9) { el.style.opacity = '0'; el.style.transform = 'translateY(52px)'; el.__pending = true; }
+    });
+    this._startLoop(false);
+  }
+  _startLoop(staticMode) {
+    const gsap = window.gsap;
+    const epoch = this._epoch;
+    const prog = document.querySelector('[data-progress]');
+    const step = () => {
+      if (this._dead || window.__filmEpoch !== epoch) { return; }
+      // keep videos muted, slow, playing
+      document.querySelectorAll('video[data-mute]').forEach((v) => {
+        if (!v.muted || v.volume !== 0) { v.defaultMuted = true; v.muted = true; v.volume = 0; }
+        if (v.playbackRate !== 0.5) { v.playbackRate = 0.5; }
+        if (v.paused && v.readyState >= 2) { const p = v.play(); if (p && p.catch) { p.catch(() => {}); } }
+      });
+      const vh = window.innerHeight;
+      const max = document.documentElement.scrollHeight - vh;
+      if (prog) { prog.style.transform = 'scaleX(' + (max > 0 ? this._clamp(window.scrollY / max) : 0) + ')'; }
+      if (!staticMode) {
+        // Opening exit
+        if (this._openSec) {
+          const r = this._openSec.getBoundingClientRect();
+          const p = this._clamp(-r.top / (r.height - vh));
+          const core = this._openSec.querySelector('[data-open-core]');
+          const veil = this._openSec.querySelector('[data-open-veil]');
+          const cue = this._openSec.querySelector('[data-open-cue]');
+          if (core) { core.style.transform = 'translateY(' + (-80 * p) + 'px) scale(' + (1 + 0.03 * p) + ')'; if (p > 0.02) { core.style.opacity = String(this._clamp(1 - p * 1.5)); } }
+          if (veil) { veil.style.opacity = String(0.42 + 0.33 * p); }
+          if (cue && p > 0.02) { cue.style.opacity = String(this._clamp(1 - p * 3)); }
+        }
+        // Scenes
+        this._scenes.forEach((sc) => {
+          const r = sc.sec.getBoundingClientRect();
+          const p = this._clamp(-r.top / (r.height - vh));
+          const n = sc.items.length;
+          if (!n) { return; }
+          sc.items.forEach((el, i) => {
+            const a = i / n, b = (i + 1) / n;
+            const u = this._clamp((p - a) / (b - a));
+            let op = 0, y = 64;
+            if (u <= 0) { op = 0; y = 64; }
+            else if (u < 0.35) { const t = u / 0.35; op = t; y = 64 * (1 - t); }
+            else if (i === n - 1 || u < 0.78) { op = 1; y = 0; }
+            else { const t = (u - 0.78) / 0.22; op = 1 - t; y = -56 * t; }
+            if (r.top > 0 && i === 0) { op = Math.max(op, 0); }
+            el.style.opacity = String(op);
+            el.style.transform = 'translateY(' + y + 'px)' + (sc.isFrames ? ' scale(' + (0.97 + 0.03 * Math.min(1, op)) + ')' : '');
+          });
+          if (sc.isFrames) {
+            if (sc.bar) { sc.bar.style.transform = 'scaleX(' + p + ')'; }
+            if (sc.counter) {
+              const i = Math.min(n, Math.max(1, Math.floor(p * n) + 1));
+              sc.counter.textContent = '0' + i + ' / 07';
+            }
+          }
+        });
+        // Daylight reveals
+        this._reveals.forEach((el) => {
+          if (!el.__pending) { return; }
+          const r = el.getBoundingClientRect();
+          if (r.top < vh * 0.88) {
+            el.__pending = false;
+            gsap.to(el, { opacity: 1, y: 0, duration: 1.0, ease: 'power2.out', clearProps: 'transform' });
+          }
+        });
+      }
+      window.__filmRaf = requestAnimationFrame(step);
+    };
+    if (window.__filmRaf) { cancelAnimationFrame(window.__filmRaf); }
+    window.__filmRaf = requestAnimationFrame(step);
+  }
+  _scrollTo(sel) {
+    const el = document.querySelector(sel);
+    if (!el) { return; }
+    window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY, behavior: 'smooth' });
+  }
+  renderVals() {
+    const cdn = 'https://d8j0ntlcm91z4.cloudfront.net/user_3DT2htyCp6A1GNlzF6OYheF1hrj/';
+    const list = [
+      { num: 'i', name: "L'alimentation", line: "Ce que tu mets dans ton assiette parle directement à tes hormones et à ton système nerveux.", img: cdn + 'hf_20260824_214730_e466eef2-163a-4c05-b744-54fe6819de07.png' },
+      { num: 'ii', name: 'Le repos', line: "Pas seulement dormir, mais accéder à un véritable état de régénération.", img: cdn + 'hf_20260824_214730_3c9cdff6-2cfa-48db-932c-32f74e1db9ec.png' },
+      { num: 'iii', name: 'Le système nerveux', line: "La base de tout. En mode survie, ton corps ne fait pas de l'équilibre hormonal une priorité.", img: cdn + 'hf_20260824_214730_802558c0-796f-4824-88fe-e178797c86a1.png' },
+      { num: 'iv', name: 'Le mouvement', line: "La façon dont tu bouges, pas seulement combien tu dépenses.", img: cdn + 'hf_20260824_214730_38d16653-32d9-44fd-80b7-f93f8792b6cb.png' },
+      { num: 'v', name: 'Le rythme circadien', line: "Ton horloge interne, qui orchestre tout le reste sur 24 heures.", img: cdn + 'hf_20260824_214731_398a4343-b5a8-4165-9661-5808d23d0e44.png' },
+      { num: 'vi', name: 'Le cycle menstruel', line: "Ton rythme propre, que la plupart des femmes apprennent à ignorer plutôt qu'à utiliser.", img: cdn + 'hf_20260824_214730_2853f820-6dd7-482b-9bd9-a546f06d8db5.png' },
+      { num: 'vii', name: 'Ton profil unique', line: "Tes minéraux, tes hormones, la vitesse de ton métabolisme. C'est la clé de la personnalisation.", img: cdn + 'hf_20260824_214730_ddadcb0d-6fdc-461f-94d1-7ffff88825fa.png' }
+    ];
+    return {
+      pillars: list.map((p) => Object.assign({}, p, { bg: "url('" + p.img + "')" })),
+      goEnd: () => this._scrollTo('[data-conversion]'),
+      goTop: () => this._scrollTo('[data-conversion]')
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/milie-naturelle-design-system-ec0568ee-2197-45ce-8437-edd3852795d0/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/milie-naturelle-design-system-ec0568ee-2197-45ce-8437-edd3852795d0/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/milie-naturelle-design-system-ec0568ee-2197-45ce-8437-edd3852795d0/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/milie-naturelle-design-system-ec0568ee-2197-45ce-8437-edd3852795d0/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/milie-naturelle-design-system-ec0568ee-2197-45ce-8437-edd3852795d0/tokens/base.css">
+  <link rel="stylesheet" href="_ds/milie-naturelle-design-system-ec0568ee-2197-45ce-8437-edd3852795d0/components/components.css">
+  <link rel="stylesheet" href="_ds/milie-naturelle-design-system-ec0568ee-2197-45ce-8437-edd3852795d0/styles.css">
+  <script src="_ds/milie-naturelle-design-system-ec0568ee-2197-45ce-8437-edd3852795d0/_ds_bundle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <style>
+    html, body { margin: 0; padding: 0; background: #FCFEE6; }
+    a { color: #51712E; text-decoration: none; }
+    a:hover { color: #3D5424; }
+    ::selection { background: #E3F3CD; color: #171D3A; }
+    @keyframes zdpCue { 0% { transform: scaleY(0); transform-origin: top; } 50% { transform: scaleY(1); transform-origin: top; } 51% { transform-origin: bottom; } 100% { transform: scaleY(0); transform-origin: bottom; } }
+  </style>
+</helmet>
+<div style="background: #FCFEE6; color: #2B3252; font-family: 'Jost', sans-serif; overflow-x: hidden;">
+  <div data-progress="" style="position: fixed; top: 0; left: 0; right: 0; height: 2px; background: #7DAD47; transform: scaleX(0); transform-origin: left center; z-index: 40;"></div>
+
+  <section data-hero="" data-screen-label="Hero" style="position: relative; height: 100vh; min-height: 520px; overflow: hidden; background: #171D3A;">
+    <video data-hero-video="" data-mute="" src="https://d8j0ntlcm91z4.cloudfront.net/user_3DT2htyCp6A1GNlzF6OYheF1hrj/hf_20260824_211920_b38bf55c-4588-49b4-a5ed-a0b5b26212d1.mp4" autoPlay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsInline="{{ true }}" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;"></video>
+    <div data-hero-veil="" style="position: absolute; inset: 0; background: #171D3A; opacity: 0.22;"></div>
+    <header style="position: absolute; top: 0; left: 0; right: 0; display: flex; justify-content: space-between; align-items: center; padding: 28px min(6vw, 72px); z-index: 4;">
+      <span data-hero-ui="" style="font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; color: #FCFEE6;">Émilie Naturelle.</span>
+      <span data-hero-ui="" style="font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: #FCFEE6; opacity: 0.85;">Naturopathe certifiée</span>
+    </header>
+    <div data-hero-core="" style="position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; padding: 0 min(6vw, 72px) clamp(28px, 8vh, 110px); z-index: 2;">
+      <div style="overflow: hidden;"><p data-hero-line="" style="margin: 0 0 20px; font-size: 12px; letter-spacing: 0.34em; text-transform: uppercase; color: #FCFEE6; font-weight: 500;">Parcours Périménopause</p></div>
+      <div style="overflow: hidden;"><h1 data-hero-line="" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(58px, 12.5vw, 176px); line-height: 0.98; color: #FCFEE6; letter-spacing: -0.02em;">Ta zone</h1></div>
+      <div style="overflow: hidden;"><h1 data-hero-line="" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(58px, 12.5vw, 176px); line-height: 0.98; color: #FCFEE6; letter-spacing: -0.02em;">de <span style="font-style: italic; color: #D0E8B2;">pouvoir</span></h1></div>
+      <div style="overflow: hidden; margin-top: 36px;">
+        <div data-hero-line="" style="display: flex; align-items: center; gap: 28px; flex-wrap: wrap;">
+          <x-import component-from-global-scope="MilieNaturelleDesignSystem_ec0568.Button" onClick="{{ goParcours }}" hint-size="220px,48px">Découvrir le parcours</x-import>
+          <span style="font-size: 14px; color: #FCFEE6; opacity: 0.92; letter-spacing: 0.04em;">30+ leçons · À ton rythme · Accès à vie</span>
+        </div>
+      </div>
+    </div>
+    <div data-hero-statement="" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 min(8vw, 96px); z-index: 3; opacity: 0; pointer-events: none;">
+      <p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(28px, 4.6vw, 62px); line-height: 1.25; color: #FCFEE6; max-width: 24ch;">Tu ne contrôles pas tes hormones. Tu contrôles <span style="font-style: italic; color: #D0E8B2;">ce qui les entoure</span>. Et c'est là que tout se joue.</p>
+    </div>
+    <div data-hero-ui="" style="position: absolute; bottom: 28px; right: min(6vw, 72px); display: flex; flex-direction: column; align-items: center; gap: 10px; z-index: 4;">
+      <span style="font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; color: #FCFEE6; opacity: 0.8;">Défiler</span>
+      <span style="width: 1px; height: 44px; background: #FCFEE6; display: block; animation: zdpCue 2.2s ease-in-out infinite;"></span>
+    </div>
+  </section>
+
+  <section data-screen-label="Reconnaissance" style="padding: clamp(110px, 18vh, 200px) min(6vw, 72px);">
+    <div style="max-width: 1180px; margin: 0 auto;">
+      <p data-reveal="" style="margin: 0 0 20px; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: #7C8274; font-weight: 500;">D'abord, la reconnaissance</p>
+      <h2 data-mask="" style="margin: 0 0 clamp(64px, 9vh, 110px); font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(40px, 6vw, 84px); line-height: 1.04; color: #171D3A; letter-spacing: -0.01em;">Est-ce que tu te <span style="font-style: italic; color: #51712E;">reconnais</span> ?</h2>
+      <div style="display: flex; flex-direction: column;">
+        <div data-reveal="" style="display: grid; grid-template-columns: minmax(64px, 140px) 1fr; gap: clamp(20px, 4vw, 64px); align-items: baseline; border-top: 1px solid #E4E7C9; padding: clamp(36px, 6vh, 56px) 0;">
+          <span style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: clamp(48px, 7vw, 104px); line-height: 1; color: #D0E8B2;">01</span>
+          <p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: clamp(23px, 2.6vw, 34px); line-height: 1.45; color: #171D3A; max-width: 56ch;">Tu manges bien. Tu bouges. Tu ne fais pas d'excès. Et pourtant, une prise de poids que rien n'explique, ou une incapacité à en perdre malgré tes efforts.</p>
+        </div>
+        <div data-reveal="" style="display: grid; grid-template-columns: minmax(64px, 140px) 1fr; gap: clamp(20px, 4vw, 64px); align-items: baseline; border-top: 1px solid #E4E7C9; padding: clamp(36px, 6vh, 56px) 0;">
+          <span style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: clamp(48px, 7vw, 104px); line-height: 1; color: #D0E8B2;">02</span>
+          <p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: clamp(23px, 2.6vw, 34px); line-height: 1.45; color: #171D3A; max-width: 56ch;">Le stress te rentre dedans plus facilement qu'avant. Ton mental tourne en boucle plus souvent. L'anxiété est devenue la trame de fond de tes journées.</p>
+        </div>
+        <div data-reveal="" style="display: grid; grid-template-columns: minmax(64px, 140px) 1fr; gap: clamp(20px, 4vw, 64px); align-items: baseline; border-top: 1px solid #E4E7C9; border-bottom: 1px solid #E4E7C9; padding: clamp(36px, 6vh, 56px) 0;">
+          <span style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: clamp(48px, 7vw, 104px); line-height: 1; color: #D0E8B2;">03</span>
+          <p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: clamp(23px, 2.6vw, 34px); line-height: 1.45; color: #171D3A; max-width: 56ch;">Et cette énergie que tu avais, elle n'est plus là. Tu te réveilles déjà fatiguée, ou ton énergie fonctionne en dents de scie.</p>
+        </div>
+      </div>
+      <p data-reveal="" style="margin: clamp(80px, 12vh, 150px) auto 0; text-align: center; font-size: 18px; line-height: 1.75; color: #7C8274; max-width: 42ch;">Beaucoup de femmes vivent ces changements à partir de 35 ans. Souvent les trois en même temps.</p>
+    </div>
+  </section>
+
+  <section data-pivot="" data-screen-label="Le renversement" style="background: #171D3A; min-height: 100vh; display: flex; align-items: center; padding: clamp(80px, 10vh, 120px) min(6vw, 72px);">
+    <div style="max-width: 920px; margin: 0 auto;">
+      <p data-pivot-line="" style="margin: 0 0 28px; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: #B7D98E; font-weight: 500;">Le renversement</p>
+      <h2 data-pivot-line="" style="margin: 0 0 clamp(44px, 7vh, 72px); font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(38px, 5.4vw, 76px); line-height: 1.06; color: #FCFEE6; letter-spacing: -0.01em;">Ce n'est pas vrai qu'il n'y a <span style="font-style: italic; color: #D0E8B2;">rien à faire</span></h2>
+      <p data-pivot-line="" style="margin: 0 0 28px; font-size: clamp(18px, 1.9vw, 23px); line-height: 1.75; color: #FCFEE6; opacity: 0.92; max-width: 56ch;">On te dit que c'est hormonal. Que c'est l'âge. Qu'il faut attendre que ça passe.</p>
+      <p data-pivot-line="" style="margin: 0 0 28px; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: clamp(24px, 2.6vw, 34px); line-height: 1.45; color: #D0E8B2;">C'est incomplet, et c'est décourageant.</p>
+      <p data-pivot-line="" style="margin: 0 0 28px; font-size: clamp(18px, 1.9vw, 23px); line-height: 1.75; color: #FCFEE6; opacity: 0.92; max-width: 56ch;">La périménopause n'est pas seulement une question d'œstrogène et de progestérone. Ces hormones ne travaillent pas seules. Elles répondent à ton sommeil, à ton alimentation, à ton système nerveux, à ta lumière, à ton mouvement.</p>
+      <p data-pivot-line="" style="margin: 0 0 28px; font-size: clamp(18px, 1.9vw, 23px); line-height: 1.75; color: #FCFEE6; opacity: 0.92; max-width: 56ch;">Ce sont ces choses-là que tu peux influencer.</p>
+      <p data-pivot-line="" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: clamp(30px, 3.6vw, 50px); line-height: 1.3; color: #FCFEE6;">C'est ce qu'on appelle <span style="font-style: italic; font-weight: 600; color: #B7D98E; border-bottom: 1px solid #7DAD47; padding-bottom: 3px;">ta zone de pouvoir</span>.</p>
+    </div>
+  </section>
+
+  <section data-screen-label="Définition" style="padding: clamp(120px, 20vh, 220px) min(6vw, 72px);">
+    <div style="max-width: 58ch; margin: 0 auto;">
+      <h2 data-mask="" style="margin: 0 0 clamp(44px, 7vh, 72px); font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(34px, 4.4vw, 58px); line-height: 1.1; color: #171D3A;">Ta zone de pouvoir, <span style="font-style: italic; color: #51712E;">c'est quoi</span></h2>
+      <p data-reveal="" style="margin: 0 0 30px; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: clamp(22px, 2.2vw, 28px); line-height: 1.5; color: #51712E;">Ce n'est pas une méthode. C'est un constat.</p>
+      <p data-reveal="" style="margin: 0 0 30px; font-size: 18px; line-height: 1.85; color: #2B3252;">Il y a des choses sur lesquelles tu n'as aucune prise : la façon dont ton œstrogène fluctue ce mois-ci, le moment où ton ovulation devient irrégulière, ton histoire hormonale.</p>
+      <p data-reveal="" style="margin: 0 0 30px; font-size: 18px; line-height: 1.85; color: #2B3252;">Et il y a tout le reste. Le contexte dans lequel ces hormones travaillent. Ce contexte, c'est toi qui le construis, chaque jour, souvent sans le savoir.</p>
+      <p data-reveal="" style="margin: 0 0 30px; font-size: 18px; line-height: 1.85; color: #2B3252;"><span style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 600; color: #51712E; border-bottom: 1px solid #9AC567; padding-bottom: 1px;">Ta zone de pouvoir</span>, ce sont les endroits où un petit ajustement change réellement quelque chose. Ils ne sont pas les mêmes pour toutes les femmes.</p>
+      <p data-reveal="" style="margin: 0; font-size: 18px; line-height: 1.85; color: #2B3252;">Tout ce parcours sert à trouver les tiens.</p>
+    </div>
+  </section>
+
+  <section data-pillars="" data-screen-label="Les sept piliers" style="position: relative; background: #FCFEE6; overflow: hidden;">
+    <div data-pillars-track="" style="display: flex; align-items: stretch; height: 100vh; width: max-content; will-change: transform;">
+      <div style="flex: none; width: min(780px, 94vw); height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 0 min(6vw, 72px);">
+        <p style="margin: 0 0 24px; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: #7C8274; font-weight: 500;">Le parcours</p>
+        <h2 style="margin: 0 0 32px; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(38px, 5vw, 68px); line-height: 1.06; color: #171D3A;">Sept portes d'entrée vers <span style="font-style: italic; font-weight: 600; color: #51712E; border-bottom: 1px solid #9AC567; padding-bottom: 2px;">ta zone de pouvoir</span></h2>
+        <p style="margin: 0; font-size: 19px; line-height: 1.75; color: #2B3252; max-width: 40ch;">Ce ne sont pas sept cases à cocher. Ce sont sept endroits où chercher ta prise.</p>
+      </div>
+      <sc-for list="{{ pillars }}" as="p" hint-placeholder-count="0">
+        <div data-panel="" style="position: relative; flex: none; width: min(860px, 94vw); height: 100vh; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: clamp(20px, 4vw, 64px); align-items: center; align-content: center; padding: 0 min(5vw, 64px); border-left: 1px solid #E4E7C9; overflow: hidden;">
+          <span style="position: absolute; top: 50%; left: 4%; transform: translateY(-50%); font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: clamp(200px, 34vw, 460px); line-height: 1; color: #F4F6DC; pointer-events: none; user-select: none;">{{ p.n }}</span>
+          <div style="position: relative; display: flex; flex-direction: column; gap: clamp(12px, 2vh, 22px);">
+            <span style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: clamp(34px, 4vw, 56px); line-height: 1; color: #9AC567;">{{ p.num }}</span>
+            <h3 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(30px, 4.4vw, 62px); line-height: 1.05; color: #171D3A;">{{ p.name }}</h3>
+            <p style="margin: 0; font-size: clamp(16px, 1.6vw, 19px); line-height: 1.65; color: #2B3252; max-width: 34ch;">{{ p.line }}</p>
+          </div>
+          <div data-ppar="" role="img" aria-label="{{ p.name }}" style="position: relative; width: 100%; height: clamp(240px, 56vh, 620px); background-image: {{ p.bg }}; background-size: cover; background-position: 50% 50%; border-radius: 16px;"></div>
+        </div>
+      </sc-for>
+    </div>
+    <div style="position: absolute; bottom: 28px; left: min(6vw, 72px); display: flex; align-items: center; gap: 18px; z-index: 3;">
+      <span data-pill-count="" style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 22px; color: #171D3A; min-width: 74px;">01 / 07</span>
+      <span style="display: block; width: clamp(80px, 14vw, 200px); height: 1px; background: #E4E7C9; position: relative; overflow: hidden;"><span data-pill-bar="" style="position: absolute; inset: 0; background: #7DAD47; transform: scaleX(0); transform-origin: left center; display: block;"></span></span>
+    </div>
+  </section>
+
+  <section data-interlude="" data-screen-label="Interlude" style="position: relative; height: 86vh; min-height: 520px; overflow: hidden; background: #171D3A;">
+    <video data-interlude-video="" data-mute="" src="https://d8j0ntlcm91z4.cloudfront.net/user_3DT2htyCp6A1GNlzF6OYheF1hrj/hf_20260824_211920_360aa85b-92b4-4fea-b5c7-770cb39d9368.mp4" autoPlay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsInline="{{ true }}" style="position: absolute; left: 0; right: 0; top: -12%; width: 100%; height: 124%; object-fit: cover;"></video>
+    <div style="position: absolute; inset: 0; background: #171D3A; opacity: 0.3;"></div>
+    <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 min(8vw, 96px);">
+      <p data-mask="" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(26px, 3.8vw, 52px); line-height: 1.3; color: #FCFEE6; max-width: 26ch;">Tu n'as pas besoin de tout changer. Tu as besoin de comprendre où est <span style="font-style: italic; color: #D0E8B2;">le nœud</span> dans ton système, et d'agir précisément là.</p>
+    </div>
+  </section>
+
+  <section data-screen-label="Résultats opposés" style="padding: clamp(110px, 17vh, 190px) min(6vw, 72px); background: #E3F3CD;">
+    <div style="max-width: 920px; margin: 0 auto;">
+      <h2 data-mask="" style="margin: 0 0 clamp(44px, 7vh, 72px); font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(34px, 4.6vw, 62px); line-height: 1.08; color: #171D3A; max-width: 20ch;">Pourquoi le même conseil donne des <span style="font-style: italic; color: #51712E;">résultats opposés</span></h2>
+      <p data-reveal="" style="margin: 0 0 28px; font-size: 18px; line-height: 1.8; color: #2B3252; max-width: 62ch;">Deux femmes, même âge, même alimentation en apparence. L'une dort bien, l'autre pas. L'une a de l'énergie, l'autre traîne une fatigue qui ne part jamais.</p>
+      <p data-reveal="" style="margin: 0 0 28px; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: clamp(22px, 2.2vw, 28px); line-height: 1.5; color: #51712E;">Ce n'est pas une question de volonté. C'est une question de contexte biologique.</p>
+      <p data-reveal="" style="margin: 0 0 28px; font-size: 18px; line-height: 1.8; color: #2B3252; max-width: 62ch;">Quand tu appliques un conseil générique à ton écosystème, parfois ça s'intègre. Souvent ça ne change rien, parce que ce n'était pas le levier qui manquait dans ton système à toi.</p>
+      <p data-reveal="" style="margin: 0; font-size: 18px; line-height: 1.8; color: #2B3252; max-width: 62ch;">C'est pour ça que la méthode de ta collègue ne donne pas les mêmes résultats chez toi. Sa zone de pouvoir n'est pas la tienne.</p>
+    </div>
+  </section>
+
+  <section data-screen-label="La posture" style="padding: clamp(120px, 18vh, 210px) min(6vw, 72px);">
+    <div style="max-width: 920px; margin: 0 auto;">
+      <h2 data-mask="" style="margin: 0 0 clamp(44px, 7vh, 72px); font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(34px, 4.6vw, 62px); line-height: 1.08; color: #171D3A;">Lire les signaux, <span style="font-style: italic; color: #51712E;">pas les faire taire</span></h2>
+      <p data-reveal="" style="margin: 0 0 28px; font-size: 18px; line-height: 1.8; color: #2B3252; max-width: 62ch;">La plupart des femmes se demandent : qu'est-ce qui me manque ? Quel aliment, quelle habitude, quel supplément ?</p>
+      <p data-reveal="" style="margin: 0 0 28px; font-size: 18px; line-height: 1.8; color: #2B3252; max-width: 62ch;">Ou l'inverse : quel cadre est-ce que je dois m'imposer ?</p>
+      <p data-reveal="" style="margin: 0 0 clamp(72px, 11vh, 130px); font-size: 18px; line-height: 1.8; color: #2B3252; max-width: 62ch;">Les deux questions viennent du même endroit, et les deux fatiguent.</p>
+      <p data-words="" style="margin: 0 auto clamp(72px, 11vh, 130px); text-align: center; font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 500; font-size: clamp(34px, 5.4vw, 72px); line-height: 1.22; color: #171D3A; max-width: 20ch;">Qu'est-ce que mon corps essaie de me dire ?</p>
+      <p data-reveal="" style="margin: 0 auto; font-size: 18px; line-height: 1.8; color: #2B3252; max-width: 62ch;">Tes symptômes sont des signaux. La fatigue dit quelque chose. Les fringales disent quelque chose. Chacun pointe vers un endroit de <span style="font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 600; color: #51712E; border-bottom: 1px solid #9AC567; padding-bottom: 1px;">ta zone de pouvoir</span> que tu n'as pas encore identifié.</p>
+    </div>
+  </section>
+
+  <section data-screen-label="Comment ça se passe" style="padding: clamp(100px, 15vh, 170px) min(6vw, 72px);">
+    <div style="max-width: 920px; margin: 0 auto;">
+      <h2 data-mask="" style="margin: 0 0 clamp(36px, 5vh, 52px); font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(34px, 4.6vw, 62px); line-height: 1.08; color: #171D3A;">Comment <span style="font-style: italic; color: #51712E;">ça se passe</span></h2>
+      <p data-reveal="" style="margin: 0 0 clamp(52px, 8vh, 80px); font-size: 18px; line-height: 1.8; color: #2B3252; max-width: 62ch;">Chaque leçon t'explique un mécanisme concret, puis te propose un exercice d'observation. Tu n'apprends pas quoi faire. Tu apprends à voir ce que ton corps te dit déjà.</p>
+      <div style="display: flex; flex-direction: column;">
+        <p data-reveal="" style="margin: 0; padding: 28px 0; border-top: 1px solid #E4E7C9; font-family: 'Cormorant Garamond', serif; font-size: clamp(21px, 2.2vw, 28px); color: #171D3A;">30+ leçons, organisées autour des sept piliers</p>
+        <p data-reveal="" style="margin: 0; padding: 28px 0; border-top: 1px solid #E4E7C9; font-family: 'Cormorant Garamond', serif; font-size: clamp(21px, 2.2vw, 28px); color: #171D3A;">Leçons en texte, lisibles à ton rythme</p>
+        <p data-reveal="" style="margin: 0; padding: 28px 0; border-top: 1px solid #E4E7C9; font-family: 'Cormorant Garamond', serif; font-size: clamp(21px, 2.2vw, 28px); color: #171D3A;">Entre 10 et 15 minutes par leçon</p>
+        <p data-reveal="" style="margin: 0; padding: 28px 0; border-top: 1px solid #E4E7C9; border-bottom: 1px solid #E4E7C9; font-family: 'Cormorant Garamond', serif; font-size: clamp(21px, 2.2vw, 28px); color: #171D3A;">Accès à vie, tout disponible dès l'inscription</p>
+      </div>
+      <p data-reveal="" style="margin: clamp(40px, 6vh, 56px) 0 0; font-size: 17px; color: #7C8274;">Tu avances depuis chez toi, sans horaire imposé.</p>
+    </div>
+  </section>
+
+  <section data-screen-label="Pour qui" style="padding: clamp(100px, 15vh, 170px) min(6vw, 72px);">
+    <div style="max-width: 920px; margin: 0 auto; display: flex; flex-direction: column; gap: clamp(76px, 11vh, 120px);">
+      <div data-reveal="">
+        <p style="margin: 0 0 36px; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: #51712E; font-weight: 600;">Pour toi si</p>
+        <div style="display: flex; flex-direction: column;">
+          <p style="margin: 0; padding: 24px 0; border-top: 1px solid #E4E7C9; font-family: 'Cormorant Garamond', serif; font-size: clamp(21px, 2.2vw, 27px); line-height: 1.5; color: #171D3A; max-width: 60ch;">Tu veux comprendre ce qui se passe dans ton corps, pas seulement recevoir des consignes</p>
+          <p style="margin: 0; padding: 24px 0; border-top: 1px solid #E4E7C9; font-family: 'Cormorant Garamond', serif; font-size: clamp(21px, 2.2vw, 27px); line-height: 1.5; color: #171D3A; max-width: 60ch;">Tu en as assez de te sentir à bout sans savoir pourquoi</p>
+          <p style="margin: 0; padding: 24px 0; border-top: 1px solid #E4E7C9; font-family: 'Cormorant Garamond', serif; font-size: clamp(21px, 2.2vw, 27px); line-height: 1.5; color: #171D3A; max-width: 60ch;">Tu as essayé des choses qui fonctionnaient pour d'autres, sans résultat pour toi</p>
+          <p style="margin: 0; padding: 24px 0; border-top: 1px solid #E4E7C9; border-bottom: 1px solid #E4E7C9; font-family: 'Cormorant Garamond', serif; font-size: clamp(21px, 2.2vw, 27px); line-height: 1.5; color: #171D3A; max-width: 60ch;">Tu cherches une base solide avant une consultation, ou entre deux</p>
+        </div>
+      </div>
+      <div data-reveal="">
+        <p style="margin: 0 0 36px; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: #7C8274; font-weight: 600;">Pas pour toi si</p>
+        <div style="display: flex; flex-direction: column;">
+          <p style="margin: 0; padding: 20px 0; border-top: 1px solid #E4E7C9; font-size: 17px; line-height: 1.7; color: #7C8274; max-width: 62ch;">Tu cherches un protocole précis à suivre à la lettre</p>
+          <p style="margin: 0; padding: 20px 0; border-top: 1px solid #E4E7C9; font-size: 17px; line-height: 1.7; color: #7C8274; max-width: 62ch;">Tu veux une solution rapide : ce parcours demande de l'observation avant l'action</p>
+          <p style="margin: 0; padding: 20px 0; border-top: 1px solid #E4E7C9; border-bottom: 1px solid #E4E7C9; font-size: 17px; line-height: 1.7; color: #7C8274; max-width: 62ch;">Tu vis des symptômes intenses ou inquiétants - commence par consulter</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Ce que ce n'est pas" style="padding: clamp(100px, 15vh, 170px) min(6vw, 72px);">
+    <div style="max-width: 58ch; margin: 0 auto;">
+      <p data-reveal="" style="margin: 0 0 30px; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: clamp(23px, 2.4vw, 30px); line-height: 1.5; color: #171D3A;">Ce n'est pas un protocole, et ça ne remplace pas un suivi personnalisé.</p>
+      <p data-reveal="" style="margin: 0 0 30px; font-size: 18px; line-height: 1.85; color: #2B3252;">C'est justement ce qui le rend utile. Comprendre ton écosystème te permet d'arriver en consultation avec des questions précises, de comprendre ce qu'on te propose, et de l'appliquer en conscience.</p>
+      <p data-reveal="" style="margin: 0; font-size: 18px; line-height: 1.85; color: #2B3252;">L'autonomie ne remplace pas l'accompagnement. Elle le rend plus puissant.</p>
+    </div>
+  </section>
+
+  <section data-screen-label="Qui t'accompagne" style="padding: clamp(80px, 12vh, 140px) min(6vw, 72px);">
+    <div data-reveal="" style="max-width: 740px; margin: 0 auto; border: 1px dashed #C5CAA6; border-radius: 10px; padding: clamp(48px, 7vh, 76px) clamp(28px, 5vw, 64px); text-align: center;">
+      <p style="margin: 0 0 20px; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: #7C8274; font-weight: 500;">Qui t'accompagne</p>
+      <p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: clamp(20px, 2vw, 26px); color: #B9C1A6; font-style: italic;">Bio d'Émilie - à venir</p>
+    </div>
+  </section>
+
+  <section data-screen-label="Ce que tu en ressors" style="padding: clamp(110px, 17vh, 190px) min(6vw, 72px);">
+    <div style="max-width: 920px; margin: 0 auto;">
+      <h2 data-mask="" style="margin: 0 0 clamp(44px, 7vh, 72px); font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(34px, 4.6vw, 62px); line-height: 1.08; color: #171D3A;">Ce que tu en <span style="font-style: italic; color: #51712E;">ressors</span></h2>
+      <p data-reveal="" style="margin: 0 0 28px; font-size: 18px; line-height: 1.8; color: #2B3252; max-width: 62ch;">À la fin, tu n'auras pas un protocole parfait et rigide.</p>
+      <p data-reveal="" style="margin: 0 0 28px; font-size: 18px; line-height: 1.8; color: #2B3252; max-width: 62ch;">Tu auras quelque chose de plus utile : la capacité de lire ton propre système.</p>
+      <p data-reveal="" style="margin: 0 0 clamp(52px, 8vh, 80px); font-size: 18px; line-height: 1.8; color: #2B3252; max-width: 62ch;">Tu commenceras à reconnaître tes motifs. Tu verras que ta fatigue du mardi suit toujours quelque chose. Que ton énergie revient quand tu fais telle chose et part quand tu fais telle autre.</p>
+      <p data-reveal="" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 3.6vw, 48px); line-height: 1.3; color: #171D3A;">Cette lecture-là, c'est <span style="font-style: italic; font-weight: 600; color: #51712E; border-bottom: 1px solid #9AC567; padding-bottom: 2px;">ta zone de pouvoir</span>.</p>
+    </div>
+  </section>
+
+  <section data-conversion="" data-screen-label="Conversion" style="background: #E3F3CD; padding: clamp(120px, 18vh, 200px) min(6vw, 72px); text-align: center;">
+    <div style="max-width: 680px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 34px;">
+      <p data-reveal="" style="margin: 0; font-size: 12px; letter-spacing: 0.34em; text-transform: uppercase; color: #51712E; font-weight: 600;">Parcours Périménopause</p>
+      <p data-mask="" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(38px, 5.6vw, 72px); line-height: 1.08; color: #171D3A;">Entrer dans <span style="font-style: italic; font-weight: 600; color: #51712E; border-bottom: 1px solid #9AC567; padding-bottom: 2px;">ta zone de pouvoir</span></p>
+      <p data-reveal="" style="margin: 0; display: inline-block; border: 1px dashed #9AC567; border-radius: 6px; padding: 14px 32px; font-family: 'Cormorant Garamond', serif; font-size: 24px; font-style: italic; color: #7C8274;">Prix - à venir</p>
+      <div data-reveal="" style="display: flex; flex-direction: column; align-items: center; gap: 18px;">
+        <x-import component-from-global-scope="MilieNaturelleDesignSystem_ec0568.Button" onClick="{{ goTop }}" hint-size="280px,48px">Entrer dans ta zone de pouvoir</x-import>
+        <span style="font-size: 14px; color: #7C8274;">Accès à vie, tout disponible dès l'inscription.</span>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background: #171D3A; padding: 48px min(6vw, 72px); display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;">
+    <span style="font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; color: #FCFEE6;">Émilie Naturelle.</span>
+    <span style="font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #B9C1A6;">Naturopathe certifiée · Coach santé</span>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;motionIntensity&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;cinematique&quot;, &quot;calme&quot;], &quot;default&quot;: &quot;cinematique&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Motion&quot;}, &quot;smoothScroll&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Motion&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() { this._dead = false; this._tryInit(0); }
+  componentWillUnmount() {
+    this._dead = true;
+    if (this._ctx) { this._ctx.revert(); this._ctx = null; }
+    if (this._lenis) { this._lenis.destroy(); this._lenis = null; }
+    if (this._tick && window.gsap) { window.gsap.ticker.remove(this._tick); this._tick = null; }
+  }
+  _tryInit(n) {
+    if (this._dead) { return; }
+    if (!(window.gsap && window.ScrollTrigger && window.Lenis)) {
+      if (n < 80) { setTimeout(() => this._tryInit(n + 1), 150); }
+      return;
+    }
+    this._init();
+  }
+  _muteAll() {
+    document.querySelectorAll('video[data-mute]').forEach((v) => {
+      v.defaultMuted = true; v.muted = true; v.volume = 0;
+      v.playbackRate = 0.5;
+      if (v.paused) { const p = v.play(); if (p && p.catch) { p.catch(() => {}); } }
+    });
+  }
+  _init() {
+    if (this._dead) { return; }
+    const gsap = window.gsap;
+    gsap.registerPlugin(window.ScrollTrigger);
+    this._muteAll();
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if ((this.props.smoothScroll ?? true) && !reduced) {
+      this._lenis = new window.Lenis({ duration: 1.2 });
+      this._lenis.on('scroll', window.ScrollTrigger.update);
+      this._tick = (t) => this._lenis.raf(t * 1000);
+      gsap.ticker.add(this._tick);
+      gsap.ticker.lagSmoothing(0);
+    }
+    if (reduced) { return; }
+    this._ctx = gsap.context(() => { this._buildAnims(gsap); });
+    setTimeout(() => { if (!this._dead) { window.ScrollTrigger.refresh(); this._muteAll(); } }, 800);
+  }
+  _buildAnims(gsap) {
+    const calme = (this.props.motionIntensity ?? 'cinematique') === 'calme';
+    const prog = document.querySelector('[data-progress]');
+    window.ScrollTrigger.create({ trigger: document.body, start: 'top top', end: 'bottom bottom', onUpdate: (st) => { if (prog) { prog.style.transform = 'scaleX(' + st.progress + ')'; } } });
+    gsap.from('[data-hero-line]', { yPercent: 115, duration: 1.3, stagger: 0.13, ease: 'power4.out', delay: 0.25 });
+    gsap.from('[data-hero-ui]', { opacity: 0, duration: 1.2, ease: 'power2.out', delay: 1.1 });
+    if (!calme) {
+      const heroTl = gsap.timeline({ scrollTrigger: { trigger: '[data-hero]', start: 'top top', end: '+=130%', scrub: true, pin: true, anticipatePin: 1 } });
+      heroTl.to('[data-hero-core]', { scale: 1.04, opacity: 0, y: -70, ease: 'none' }, 0)
+        .to('[data-hero-ui]', { opacity: 0, ease: 'none' }, 0)
+        .to('[data-hero-veil]', { opacity: 0.55, ease: 'none' }, 0)
+        .fromTo('[data-hero-statement]', { opacity: 0, y: 56 }, { opacity: 1, y: 0, ease: 'none' }, 0.4);
+    }
+    gsap.utils.toArray('[data-mask]').forEach((el) => {
+      gsap.fromTo(el, { clipPath: 'inset(0 0 100% 0)', y: 44 }, { clipPath: 'inset(0 0 -8% 0)', y: 0, duration: 1.2, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 84%' } });
+    });
+    gsap.utils.toArray('[data-reveal]').forEach((el) => {
+      gsap.fromTo(el, { y: 52, opacity: 0 }, { y: 0, opacity: 1, duration: 1.05, ease: 'power2.out', scrollTrigger: { trigger: el, start: 'top 86%' } });
+    });
+    const lines = gsap.utils.toArray('[data-pivot-line]');
+    if (lines.length) {
+      if (calme) {
+        lines.forEach((el) => gsap.fromTo(el, { y: 36, opacity: 0 }, { y: 0, opacity: 1, duration: 0.9, ease: 'power2.out', scrollTrigger: { trigger: el, start: 'top 86%' } }));
+      } else {
+        gsap.timeline({ scrollTrigger: { trigger: '[data-pivot]', start: 'top top', end: '+=180%', scrub: true, pin: true, anticipatePin: 1 } })
+          .fromTo(lines, { opacity: 0.06, y: 30 }, { opacity: 1, y: 0, stagger: 0.6, ease: 'none' });
+      }
+    }
+    const track = document.querySelector('[data-pillars-track]');
+    if (track) {
+      const counter = document.querySelector('[data-pill-count]');
+      const bar = document.querySelector('[data-pill-bar]');
+      if (calme) {
+        track.parentElement.style.overflowX = 'auto';
+      } else {
+        const horiz = gsap.to(track, {
+          x: () => -(track.scrollWidth - window.innerWidth),
+          ease: 'none',
+          scrollTrigger: {
+            trigger: '[data-pillars]', start: 'top top',
+            end: () => '+=' + (track.scrollWidth - window.innerWidth),
+            scrub: 1, pin: true, invalidateOnRefresh: true, anticipatePin: 1,
+            onUpdate: (st) => {
+              if (bar) { bar.style.transform = 'scaleX(' + st.progress + ')'; }
+              if (counter) {
+                const i = Math.min(7, Math.max(1, Math.round(st.progress * 7 + 0.35)));
+                counter.textContent = '0' + i + ' / 07';
+              }
+            }
+          }
+        });
+        gsap.utils.toArray('[data-ppar]').forEach((img) => {
+          gsap.fromTo(img, { backgroundPosition: '32% 50%' }, {
+            backgroundPosition: '68% 50%', ease: 'none',
+            scrollTrigger: { trigger: img, containerAnimation: horiz, start: 'left right', end: 'right left', scrub: true }
+          });
+        });
+      }
+    }
+    const iv = document.querySelector('[data-interlude-video]');
+    if (iv && !calme) {
+      gsap.fromTo(iv, { yPercent: -7 }, { yPercent: 7, ease: 'none', scrollTrigger: { trigger: '[data-interlude]', start: 'top bottom', end: 'bottom top', scrub: true } });
+    }
+    const wq = document.querySelector('[data-words]');
+    if (wq) {
+      const words = wq.textContent.split(' ');
+      wq.textContent = '';
+      words.forEach((w, i) => {
+        const s = document.createElement('span');
+        s.textContent = w + (i < words.length - 1 ? '\u00A0' : '');
+        s.style.opacity = '0.12';
+        wq.appendChild(s);
+      });
+      gsap.to(wq.children, { opacity: 1, stagger: 0.4, ease: 'none', scrollTrigger: { trigger: wq, start: 'top 82%', end: 'top 38%', scrub: true } });
+    }
+  }
+  _scrollTo(sel) {
+    const el = document.querySelector(sel);
+    if (!el) { return; }
+    if (this._lenis) { this._lenis.scrollTo(el); }
+    else { window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY, behavior: 'smooth' }); }
+  }
+  renderVals() {
+    const cdn = 'https://d8j0ntlcm91z4.cloudfront.net/user_3DT2htyCp6A1GNlzF6OYheF1hrj/';
+    const list = [
+      { n: '1', num: 'i', name: "L'alimentation", line: "Ce que tu mets dans ton assiette parle directement à tes hormones et à ton système nerveux.", img: cdn + 'hf_20260824_211424_a9e12a60-1f7d-406d-b117-f77eca9aa512.png' },
+      { n: '2', num: 'ii', name: 'Le repos', line: "Pas seulement dormir, mais accéder à un véritable état de régénération.", img: cdn + 'hf_20260824_211424_cf0198ac-ea62-439f-8551-85b17f6e3408.png' },
+      { n: '3', num: 'iii', name: 'Le système nerveux', line: "La base de tout. En mode survie, ton corps ne fait pas de l'équilibre hormonal une priorité.", img: cdn + 'hf_20260824_211424_c98db727-e6fd-471a-bb50-e53b3c8199f4.png' },
+      { n: '4', num: 'iv', name: 'Le mouvement', line: "La façon dont tu bouges, pas seulement combien tu dépenses.", img: cdn + 'hf_20260824_211424_b7cd7333-3265-4470-901b-89809ba64cf8.png' },
+      { n: '5', num: 'v', name: 'Le rythme circadien', line: "Ton horloge interne, qui orchestre tout le reste sur 24 heures.", img: cdn + 'hf_20260824_211424_8fbbda99-ce5e-4556-8760-980a67171c5a.png' },
+      { n: '6', num: 'vi', name: 'Le cycle menstruel', line: "Ton rythme propre, que la plupart des femmes apprennent à ignorer plutôt qu'à utiliser.", img: cdn + 'hf_20260824_211424_e2692f8a-92e2-49c6-a302-03fdc6e7cc13.png' },
+      { n: '7', num: 'vii', name: 'Ton profil unique', line: "Tes minéraux, tes hormones, la vitesse de ton métabolisme. C'est le pilier de la personnalisation, et c'est la clé.", img: cdn + 'hf_20260824_211424_6cfe1dc3-fba1-4825-b70e-743e5b64de91.png' }
+    ];
+    return {
+      pillars: list.map((p) => Object.assign({}, p, { bg: "url('" + p.img + "')" })),
+      goParcours: () => this._scrollTo('[data-pillars]'),
+      goTop: () => this._scrollTo('[data-conversion]')
+    };
+  }
+}
+</script>
+</body>
+</html>
