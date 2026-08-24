@@ -1,0 +1,12 @@
+/* ÉMILIE NATURELLE — FONTS
+   --------------------------------------------------------------------
+   SUBSTITUTION NOTE: The original wordmark is a high-contrast classical
+   serif (un-named in supplied assets). The nearest freely-available match
+   is **Cormorant Garamond** — same delicate bracketed serifs, high stroke
+   contrast and ball-terminal accents. UI / body type is set in **Jost**,
+   a refined geometric sans that carries the same understated French-
+   apothecary feeling at small sizes. Swap these @font-face/import sources
+   if the true brand fonts are provided.
+   -------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap');
