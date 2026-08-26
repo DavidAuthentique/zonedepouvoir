@@ -126,12 +126,20 @@
 
   /* ---------- bio d'Émilie (placeholders) ---------- */
   .bio { background: linear-gradient(to bottom, #F6F1E7, #EFE3DA); padding: var(--sc-section) var(--sc-gutter); position: relative; z-index: 2; }
-  .bio .sc-wrap { max-width: 62rem; display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: clamp(2.5rem, 6vw, 5rem); align-items: center; }
-  @media (max-width: 860px) { .bio .sc-wrap { grid-template-columns: 1fr; } }
-  .bio-photo { margin: 0; aspect-ratio: 4 / 5; border-radius: 16px; overflow: hidden; background: #E2D5C2; display: grid; place-items: center; border: 1.5px dashed #C7B79C; }
-  .bio-photo span { font-family: var(--sc-font-text); font-size: 1.05rem; letter-spacing: 0.08em; text-transform: uppercase; color: #9A8A6E; }
+  .bio .sc-wrap { max-width: 68rem; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(2.5rem, 6vw, 5rem); align-items: stretch; }
+  @media (max-width: 860px) { .bio .sc-wrap { grid-template-columns: 1fr; } .bio-photo { aspect-ratio: 4 / 5; height: auto; } }
+  /* la photo occupe toute la hauteur du texte : les deux colonnes s'équilibrent */
+  .bio-photo { margin: 0; height: 100%; min-height: 30rem; border-radius: 18px; overflow: hidden; background: #E2D5C2; box-shadow: 0 26px 50px -24px rgba(63,59,51,0.4); }
+  .bio-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 18%; display: block; }
   .bio-texte .etiquette-bio { margin: 0 0 1rem; font-size: 0.95rem; letter-spacing: 0.26em; text-transform: uppercase; font-weight: 700; color: var(--sc-accent); }
   .bio-texte h2 { margin: 0 0 1.4rem; font-family: var(--sc-font-display); font-weight: 480; font-size: clamp(2rem, 3.6vw, 3.2rem); line-height: 1.15; color: var(--sc-ink); }
+  .bio-role { margin: -0.6rem 0 1.6rem; font-family: var(--sc-font-text); font-weight: 600; font-size: 1.1rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--sc-accent); }
+  .bio-p { margin: 0 0 1.4rem; font-family: var(--sc-font-text); font-weight: 400; font-size: clamp(1.15rem, 1.6vw, 1.3rem); line-height: 1.7; color: #4A463C; }
+  .bio-p strong { color: var(--sc-ink); font-weight: 700; }
+  .bio-aspir-titre { margin: 2.2rem 0 1rem; font-family: var(--sc-font-display); font-weight: 500; font-size: 1.5rem; color: var(--sc-ink); }
+  .bio-aspirations { margin: 0; padding: 0; list-style: none; }
+  .bio-aspirations li { position: relative; padding: 0.65rem 0 0.65rem 1.7rem; font-family: var(--sc-font-text); font-size: clamp(1.1rem, 1.5vw, 1.25rem); line-height: 1.6; color: #4A463C; border-top: 1px solid #E2D5C2; }
+  .bio-aspirations li::before { content: ''; position: absolute; left: 0.2rem; top: 1.25rem; width: 0.55rem; height: 0.55rem; border-radius: 50%; background: var(--sc-accent); }
   .bio-placeholder { border: 1.5px dashed #C7B79C; border-radius: 12px; padding: clamp(1.6rem, 3vw, 2.4rem); font-family: var(--sc-font-display); font-style: italic; font-size: 1.35rem; line-height: 1.7; color: #9A8A6E; }
 
   /* ---------- clôture ---------- */
@@ -268,12 +276,23 @@
   <section class="bio" data-sc-act="flow" id="acte-bio" data-aube-act="Qui t'accompagne">
     <div class="sc-wrap" data-sc-in data-sc-stagger="70">
       <figure class="bio-photo">
-        <span>Photo d'Émilie · à venir</span>
+        <img src="assets/emilie-bio.jpg" width="933" height="1400" alt="Émilie Gendron, souriante, devant un mur de bois.">
       </figure>
       <div class="bio-texte">
         <p class="etiquette-bio">Qui t'accompagne</p>
-        <h2>Émilie, naturopathe certifiée</h2>
-        <div class="bio-placeholder">Texte de la bio d'Émilie : à venir. (Tu me fourniras ce texte et la photo, et je les intégrerai ici.)</div>
+        <h2>Émilie Gendron</h2>
+        <p class="bio-role">Naturopathe diplômée · Coach santé</p>
+        <p class="bio-p"><em class="accent-italique">Simple, naturelle et puissante.</em> Ce sont les trois mots qui me définissent le plus. En Human Design, je suis une Manifesteur-Générateur et je l'incarne totalement au quotidien : j'ai cette capacité innée de manifester ce que je veux et d'ouvrir les chemins, pour moi et les autres autour.</p>
+        <p class="bio-p">Maman, entrepreneure et ancienne athlète de haut niveau, j'ai un parcours non linéaire et atypique.</p>
+        <p class="bio-p">Via Émilie Naturelle, j'ai créé ma propre approche en naturopathie, 100&nbsp;% sur-mesure, et j'ai accompagné plus de <strong>700 femmes en transition hormonale</strong> dans la dernière année. Mon parcours me donne la capacité de tenir un espace d'accompagnement solide pour d'autres femmes.</p>
+        <p class="bio-aspir-titre">Mes aspirations</p>
+        <ul class="bio-aspirations">
+          <li>Être un modèle en matière de santé physique, mentale et émotionnelle</li>
+          <li>Inspirer les gens à reprendre leur pouvoir personnel</li>
+          <li>Démontrer la puissance de la simplicité</li>
+          <li>Proposer un accompagnement éducatif visant à soutenir de saines habitudes de vie</li>
+          <li>Inspirer d'autres femmes à déployer leur féminité intérieure</li>
+        </ul>
       </div>
     </div>
   </section>
