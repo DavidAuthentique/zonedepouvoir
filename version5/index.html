@@ -5,6 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Périménopause, ta zone de pouvoir · Émilie Naturelle</title>
 <meta name="description" content="La formation en ligne sur la périménopause qui t'apprend à lire ce que ton corps te dit. Par Émilie Naturelle, naturopathe. 30+ leçons, accès à vie.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Périménopause, ta zone de pouvoir">
+<meta property="og:description" content="La formation en ligne sur la périménopause qui t'apprend à lire ce que ton corps te dit. Par Émilie Naturelle, naturopathe. 30+ leçons, accès à vie.">
+<meta property="og:url" content="https://davidauthentique.github.io/zonedepouvoir/version5/">
+<meta property="og:image" content="https://davidauthentique.github.io/zonedepouvoir/version5/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://davidauthentique.github.io/zonedepouvoir/version5/assets/og-image.jpg">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,7 +66,7 @@
   .hero-titre .accent-italique { font-style: italic; color: var(--sc-accent); }
   .hero-titre2 { margin: 0.4rem auto 0; font-family: var(--sc-font-display); font-weight: 480; font-style: italic; font-size: clamp(1.9rem, 4.2vw, 3.4rem); line-height: 1.1; color: #55503F; text-wrap: balance; opacity: 0; transform: translateY(18px); animation: entre 1.3s var(--sc-ease-out) 0.55s forwards; }
   .hero-titre2 .accent-italique { color: var(--sc-accent); }
-  .hero-sub { margin: clamp(1rem, 2.2vh, 1.5rem) auto 0; max-width: 52ch; font-weight: 400; font-size: clamp(1.15rem, 1.6vw, 1.35rem); line-height: 1.55; color: #FBF7EF; font-weight: 500;
+  .hero-sub { margin: 0.4rem auto 0; max-width: 52ch; font-weight: 400; font-size: clamp(1.15rem, 1.6vw, 1.35rem); line-height: 1.55; color: #FBF7EF; font-weight: 500;
     text-shadow: 0 1px 3px rgba(45,40,32,0.55), 0 2px 18px rgba(45,40,32,0.5); opacity: 0; animation: entre 1.2s var(--sc-ease-out) 0.7s forwards; }
   .hero-bas { margin-top: 0; display: flex; flex-direction: column; align-items: center; gap: 1.1rem; opacity: 0; animation: entre 1.2s var(--sc-ease-out) 1s forwards; }
   .hero-cta { display: inline-block; font-family: var(--sc-font-text); font-weight: 600; font-size: 1.15rem; letter-spacing: 0.03em; color: #FBF7EF; background: var(--sc-accent); text-decoration: none; border-radius: 999px; padding: 0.95em 2.3em; box-shadow: 0 14px 30px -14px rgba(102,58,34,0.45); transition: background 150ms var(--sc-ease-out), transform 150ms var(--sc-ease-out); }
@@ -96,12 +105,13 @@
   .rail__lead { flex: 0 0 auto; width: min(34rem, 68vw); }
   .rail__lead h2 { font-weight: 480; color: #33301F; }
   .rail__lead .sc-body { color: #4A4732; }
-  .pilier { flex: 0 0 auto; width: clamp(15rem, 24vw, 21rem); }
+  .pilier { flex: 0 0 auto; width: clamp(15rem, 24vw, 21rem); height: calc(clamp(15rem, 24vw, 21rem) * 1.3334 + 14rem); display: flex; flex-direction: column; }
+  .pilier figure { flex: 0 0 auto; }
   .pilier figure { margin: 0 0 var(--sc-4); border-radius: 14px; overflow: hidden; aspect-ratio: 3 / 4; background: #14161C; box-shadow: 0 22px 44px -20px rgba(51,48,31,0.5); }
   .pilier img { width: 100%; height: 100%; object-fit: cover; display: block; }
   .pilier .numeral { font-family: var(--sc-font-display); font-style: italic; font-size: 1.5rem; color: #7A5210; }
   .pilier h3 { margin: 0.3rem 0 0.5rem; font-family: var(--sc-font-display); font-weight: 500; font-size: clamp(1.65rem, 2.2vw, 2.1rem); color: #33301F; }
-  .pilier p { margin: 0; font-weight: 400; font-size: 1.25rem; line-height: 1.6; color: #4A4732; max-width: 34ch; }
+  .pilier p { margin: 0; font-weight: 400; font-size: 1.25rem; line-height: 1.6; color: #4A4732; max-width: 34ch; min-height: 8.2rem; }
   .rail__note { flex: 0 0 auto; width: min(26rem, 70vw); padding-right: 10vw; }
   .rail__note p { font-family: var(--sc-font-display); font-style: italic; font-size: clamp(1.55rem, 2.4vw, 2rem); line-height: 1.5; color: #33301F; }
   @media (prefers-reduced-motion: no-preference) {
@@ -110,7 +120,9 @@
 
   /* ---------- plein jour : question + parcours ---------- */
   .clair { background: var(--sc-surface); position: relative; z-index: 2; }
-  .question { min-height: 62vh; display: grid; place-items: center; text-align: center; padding: var(--sc-section) var(--sc-gutter); }
+  #acte-question { background: transparent; }
+  .parcours { background: #F6F1E7; }
+  .question { min-height: 62vh; display: grid; place-items: center; text-align: center; padding: var(--sc-section) var(--sc-gutter); background: linear-gradient(to bottom, #CFE0E6, #DCE9EC); }
   .question p { margin: 0; font-family: var(--sc-font-display); font-style: italic; font-weight: 480; font-size: clamp(2.3rem, 6vw, 5.2rem); line-height: 1.16; max-width: 18ch; color: var(--sc-ink); text-wrap: balance; }
   .parcours { padding: 0 var(--sc-gutter) var(--sc-section); }
   .parcours .sc-wrap { max-width: 58rem; }
@@ -118,18 +130,30 @@
   .liste-lignes p { margin: 0; padding: 1.7rem 0; border-top: 1px solid #E2D9C6; font-family: var(--sc-font-display); font-size: clamp(1.6rem, 2.3vw, 2.1rem); color: var(--sc-ink); }
   .liste-lignes p:last-child { border-bottom: 1px solid #E2D9C6; }
   .deux-colonnes { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: clamp(2.5rem, 5vw, 4.5rem); margin-top: clamp(3rem, 6vh, 4.5rem); }
-  .etiquette { font-size: 0.95rem; letter-spacing: 0.26em; text-transform: uppercase; font-weight: 700; margin: 0 0 1.2rem; }
+  .etiquette { font-family: var(--sc-font-display); font-size: clamp(1.5rem, 2.2vw, 2rem); letter-spacing: 0.02em; text-transform: none; font-weight: 500; margin: 0 0 1.2rem; }
   .pour-toi .etiquette { color: var(--sc-accent); }
   .pas-pour-toi .etiquette { color: var(--sc-ink-soft); }
   .deux-colonnes p:not(.etiquette) { margin: 0; padding: 1.2rem 0; border-top: 1px solid #E2D9C6; font-weight: 400; font-size: 1.3rem; line-height: 1.65; color: #4A463C; }
   .nuance { margin-top: clamp(2.5rem, 5vh, 3.5rem); font-weight: 400; font-size: 1.3rem; line-height: 1.75; color: #4A463C; max-width: 62ch; }
 
+  /* ---------- les leçons ---------- */
+  .lecons { padding-top: 0; padding-bottom: var(--sc-section); }
+  .lecons-placeholder { margin-top: clamp(2rem, 4vh, 3rem); border: 1.5px dashed #C7B79C; border-radius: 12px; padding: clamp(1.8rem, 3.5vw, 2.6rem); font-family: var(--sc-font-display); font-style: italic; font-size: 1.35rem; line-height: 1.7; color: #9A8A6E; }
+  /* ---------- pour qui : section en soi ---------- */
+  .pour-qui { padding: var(--sc-section) var(--sc-gutter); background: linear-gradient(to bottom, #E9EBD9, #E2E6CE); }
+  .pour-qui .sc-wrap { max-width: 58rem; }
+  .pour-qui .deux-colonnes { margin-top: clamp(2.2rem, 4.5vh, 3.5rem); }
+  .pour-qui-titre { margin: 0; font-weight: 480; }
+  /* ---------- le shift : autonomie en gros titre ---------- */
+  .autonomie { padding: clamp(8rem, 16vh, 13rem) var(--sc-gutter); background: linear-gradient(to bottom, #F3DECE, #EFD3BC); text-align: center; position: relative; z-index: 2; }
+  .autonomie .sc-wrap { max-width: 62rem; }
+  .autonomie-titre { margin: 0 auto; font-family: var(--sc-font-display); font-weight: 480; font-size: clamp(2.2rem, 4.6vw, 4.2rem); line-height: 1.22; color: var(--sc-ink); text-wrap: balance; }
   /* ---------- bio d'Émilie (placeholders) ---------- */
-  .bio { background: linear-gradient(to bottom, #F6F1E7, #EFE3DA); padding: var(--sc-section) var(--sc-gutter); position: relative; z-index: 2; }
-  .bio .sc-wrap { max-width: 68rem; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(2.5rem, 6vw, 5rem); align-items: stretch; }
-  @media (max-width: 860px) { .bio .sc-wrap { grid-template-columns: 1fr; } .bio-photo { aspect-ratio: 4 / 5; height: auto; } }
-  /* la photo occupe toute la hauteur du texte : les deux colonnes s'équilibrent */
-  .bio-photo { margin: 0; height: 100%; min-height: 30rem; border-radius: 18px; overflow: hidden; background: #E2D5C2; box-shadow: 0 26px 50px -24px rgba(63,59,51,0.4); }
+  .bio { background: #F6F1E7; padding: var(--sc-section) var(--sc-gutter); position: relative; z-index: 2; }
+  .bio .sc-wrap { max-width: 62rem; display: block; }
+  @media (max-width: 860px) { .bio-photo { float: none !important; width: 100% !important; max-width: 22rem; margin: 0 auto 2rem !important; } }
+  /* la photo flotte à gauche : le texte l'enveloppe */
+  .bio-photo { float: left; width: min(20rem, 42%); aspect-ratio: 4 / 5; margin: 0.5rem clamp(1.8rem, 4vw, 3rem) 1rem 0; border-radius: 18px; overflow: hidden; background: #E2D5C2; box-shadow: 0 26px 50px -24px rgba(63,59,51,0.4); }
   .bio-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 18%; display: block; }
   .bio-texte .etiquette-bio { margin: 0 0 1rem; font-size: 0.95rem; letter-spacing: 0.26em; text-transform: uppercase; font-weight: 700; color: var(--sc-accent); }
   .bio-texte h2 { margin: 0 0 1.4rem; font-family: var(--sc-font-display); font-weight: 480; font-size: clamp(2rem, 3.6vw, 3.2rem); line-height: 1.15; color: var(--sc-ink); }
@@ -142,6 +166,22 @@
   .bio-aspirations li::before { content: ''; position: absolute; left: 0.2rem; top: 1.25rem; width: 0.55rem; height: 0.55rem; border-radius: 50%; background: var(--sc-accent); }
   .bio-placeholder { border: 1.5px dashed #C7B79C; border-radius: 12px; padding: clamp(1.6rem, 3vw, 2.4rem); font-family: var(--sc-font-display); font-style: italic; font-size: 1.35rem; line-height: 1.7; color: #9A8A6E; }
 
+  /* ---------- FAQ ---------- */
+  .faq { padding: var(--sc-section) var(--sc-gutter); background: linear-gradient(to bottom, #DCE9EC, #E8EFF0); position: relative; z-index: 2; }
+  .faq .sc-wrap { max-width: 52rem; }
+  .faq h2 { font-weight: 480; }
+  .faq-liste { margin-top: clamp(2rem, 4vh, 3rem); }
+  .faq-liste details { border-top: 1px solid #C4D3D7; }
+  .faq-liste details:last-child { border-bottom: 1px solid #C4D3D7; }
+  .faq-liste summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1.3rem 0; font-family: var(--sc-font-display); font-weight: 500; font-size: clamp(1.25rem, 1.8vw, 1.5rem); color: var(--sc-ink); }
+  .faq-liste summary::-webkit-details-marker { display: none; }
+  .faq-liste summary::after { content: '+'; flex: 0 0 auto; font-family: var(--sc-font-text); font-weight: 400; font-size: 1.6rem; color: var(--sc-accent); transition: transform 180ms var(--sc-ease-out); }
+  .faq-liste details[open] summary::after { transform: rotate(45deg); }
+  .faq-liste details > div { padding: 0 0 1.5rem; }
+  .faq-liste details p { margin: 0 0 0.9rem; font-family: var(--sc-font-text); font-weight: 400; font-size: 1.15rem; line-height: 1.7; color: #4A463C; max-width: 62ch; }
+  .avis-medical { margin-top: clamp(3rem, 6vh, 4.5rem); border: 1.5px solid #C4D3D7; border-radius: 14px; padding: clamp(1.6rem, 3vw, 2.4rem); background: rgba(246,241,231,0.6); }
+  .avis-titre { margin: 0 0 1rem; font-size: 0.95rem; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 700; color: var(--sc-ink-soft); }
+  .avis-medical p { margin: 0 0 0.8rem; font-size: 1.02rem; line-height: 1.65; color: #55503F; }
   /* ---------- clôture ---------- */
   .close-stage { display: grid; grid-template-rows: 1fr auto; background: linear-gradient(to bottom, #EFE3DA, #E9C9AE); }
   .close-inner { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: clamp(1.6rem, 3.5vh, 2.4rem); padding: 0 var(--sc-gutter); }
@@ -163,7 +203,7 @@
 
     .hero video, .hero .hero-poster { object-position: 50% 30%; }
     .rail__lead { width: 78vw; }
-    .pilier { width: 72vw; }
+    .pilier { width: 72vw; height: calc(72vw * 1.3334 + 14rem); }
   }
 </style>
 </head>
@@ -186,11 +226,11 @@
     <div class="hero-inner">
       <p class="hero-eyebrow">Formation en ligne</p>
       <h1 class="hero-titre">Périménopause</h1>
-      <h2 class="hero-titre2">Ta zone de <span class="accent-italique">pouvoir</span></h2>
-      <p class="hero-sub">Un parcours simple, naturel et puissant pour lire ce que ton corps te dit.<br>Un shift vers plus d'énergie, une meilleure gestion du stress et un meilleur équilibre.</p>
+      <h2 class="hero-titre2">Reprends ta zone de <span class="accent-italique">pouvoir</span></h2>
       <div class="hero-bas">
         <a class="hero-cta" href="#entrer">Découvrir le parcours</a>
         <p class="hero-note">30+ leçons en ligne · À ton rythme · Accès à vie</p>
+        <p class="hero-sub">Un parcours simple, naturel et puissant pour lire ce que ton corps te dit.<br>Un shift vers plus d'énergie, une meilleure gestion du stress et un meilleur équilibre.</p>
       </div>
     </div>
   </section>
@@ -229,14 +269,14 @@
           <h2 class="sc-display sc-display--lg">Sept piliers, un seul territoire : le tien.</h2>
           <p class="sc-body">Chaque leçon t'explique un mécanisme concret, puis te propose un exercice d'observation. Tu n'apprends pas quoi faire. Tu apprends à voir ce que ton corps te dit déjà.</p>
         </div>
-        <article class="pilier"><figure><img src="assets/p1-alimentation.jpg" width="1045" height="1400" alt="Tranche d'orange rétroéclairée, lumineuse sur fond noir."></figure><span class="numeral">i</span><h3>L'alimentation</h3><p>Ce que tu mets dans ton assiette parle directement à tes hormones et à ton système nerveux.</p></article>
-        <article class="pilier"><figure><img src="assets/p2-repos.jpg" width="1045" height="1400" alt="Plis de soie crème dans une lumière douce, sur fond noir."></figure><span class="numeral">ii</span><h3>Le repos</h3><p>Pas seulement dormir, mais accéder à un véritable état de régénération.</p></article>
-        <article class="pilier"><figure><img src="assets/p3-nerveux.jpg" width="1045" height="1400" alt="Jeune crosse de fougère qui se déroule, sur fond noir."></figure><span class="numeral">iii</span><h3>Le système nerveux</h3><p>La base de tout. En mode survie, ton corps ne fait pas de l'équilibre hormonal une priorité.</p></article>
-        <article class="pilier"><figure><img src="assets/p4-mouvement.jpg" width="1045" height="1400" alt="Traînée de lumière dorée en longue exposition, sur fond noir."></figure><span class="numeral">iv</span><h3>Le mouvement</h3><p>La façon dont tu bouges, pas seulement combien tu dépenses.</p></article>
-        <article class="pilier"><figure><img src="assets/p5-circadien.jpg" width="1045" height="1400" alt="Arc de lumière du soleil voyageant sur un mur sombre."></figure><span class="numeral">v</span><h3>Le rythme circadien</h3><p>Ton horloge interne, qui orchestre tout le reste sur 24 heures.</p></article>
-        <article class="pilier"><figure><img src="assets/p6-cycle.jpg" width="1045" height="1400" alt="Croissant de lumière chaude, sur fond noir."></figure><span class="numeral">vi</span><h3>Le cycle menstruel</h3><p>Ton rythme propre, que la plupart des femmes apprennent à ignorer plutôt qu'à utiliser.</p></article>
-        <article class="pilier"><figure><img src="assets/p7-unique.jpg" width="1045" height="1400" alt="Réseau de nervures d'une feuille, illuminé sur fond noir."></figure><span class="numeral">vii</span><h3>Ton profil unique</h3><p>Tes minéraux, tes hormones, la vitesse de ton métabolisme. C'est la clé de la personnalisation.</p></article>
-        <div class="rail__note"><p>Tes symptômes sont des signaux. Chacun pointe vers un de ces piliers, vers un endroit que tu n'as pas encore identifié.</p></div>
+        <article class="pilier"><figure><img src="assets/p1-alimentation.jpg" width="1045" height="1400" alt="Tranche d'orange rétroéclairée, lumineuse sur fond noir."></figure><span class="numeral">i</span><h3>L'alimentation</h3><p>Tu vois enfin pourquoi tu as faim deux heures après avoir mangé. Ce que tu mets dans ton assiette parle à tes hormones bien avant de parler à ton poids.</p></article>
+        <article class="pilier"><figure><img src="assets/p2-repos.jpg" width="1045" height="1400" alt="Plis de soie crème dans une lumière douce, sur fond noir."></figure><span class="numeral">ii</span><h3>Le repos</h3><p>Tu comprends pourquoi neuf heures de sommeil ne te reposent pas. Le repos n'est pas ce qui vient après. C'est ce qui rend le reste possible.</p></article>
+        <article class="pilier"><figure><img src="assets/p3-nerveux.jpg" width="1045" height="1400" alt="Jeune crosse de fougère qui se déroule, sur fond noir."></figure><span class="numeral">iii</span><h3>Le système nerveux</h3><p>Tu reconnais le moment où tu bascules, avant que ça déborde. Un corps qui se croit en danger ne fait pas de tes hormones une priorité.</p></article>
+        <article class="pilier"><figure><img src="assets/p4-mouvement.jpg" width="1045" height="1400" alt="Traînée de lumière dorée en longue exposition, sur fond noir."></figure><span class="numeral">iv</span><h3>Le mouvement</h3><p>Tu sais quoi faire les jours où tu n'as rien à donner. Ton corps n'a pas besoin d'être poussé plus fort. Il a besoin d'être lu plus finement.</p></article>
+        <article class="pilier"><figure><img src="assets/p5-circadien.jpg" width="1045" height="1400" alt="Arc de lumière du soleil voyageant sur un mur sombre."></figure><span class="numeral">v</span><h3>Le rythme circadien</h3><p>Tu comprends pourquoi tu te réveilles à trois heures du matin. Ta nuit ne se prépare pas le soir. Elle se prépare au réveil.</p></article>
+        <article class="pilier"><figure><img src="assets/p6-cycle.jpg" width="1045" height="1400" alt="Croissant de lumière chaude, sur fond noir."></figure><span class="numeral">vi</span><h3>Le cycle menstruel</h3><p>Tu arrêtes de te demander pourquoi tu n'es pas la même chaque semaine. Ton corps n'est pas instable. Il est cyclique, et il l'a toujours été.</p></article>
+        <article class="pilier"><figure><img src="assets/p7-unique.jpg" width="1045" height="1400" alt="Réseau de nervures d'une feuille, illuminé sur fond noir."></figure><span class="numeral">vii</span><h3>Ton profil unique</h3><p>Tu découvres pourquoi ce qui marche pour ta sœur ne marche pas pour toi. Tes minéraux, tes hormones, ton métabolisme forment une signature qui n'appartient qu'à toi.</p></article>
+        <div class="rail__note"><p>Tu n'as pas besoin de travailler les sept. Tu as besoin de trouver lequel est le tien.</p></div>
       </div>
     </div>
   </section>
@@ -254,27 +294,41 @@
           <p>Leçons en texte, entre 10 et 15 minutes chacune</p>
           <p>Accès à vie, tout disponible dès l'inscription</p>
         </div>
-        <div class="deux-colonnes">
-          <div class="pour-toi">
-            <p class="etiquette">Pour toi si</p>
-            <p>Tu veux comprendre ce qui se passe dans ton corps, pas seulement recevoir des consignes</p>
-            <p>Tu as essayé des choses qui fonctionnaient pour d'autres, sans résultat pour toi</p>
-            <p>Tu cherches une base solide avant une consultation, ou entre deux</p>
-          </div>
-          <div class="pas-pour-toi">
-            <p class="etiquette">Pas pour toi si</p>
-            <p>Tu cherches un protocole précis à suivre à la lettre, ou une solution rapide : ce parcours demande de l'observation avant l'action</p>
-            <p>Tu vis des symptômes intenses ou inquiétants : commence par consulter</p>
-          </div>
-        </div>
-        <p class="nuance">Ce n'est pas un protocole, et ça ne remplace pas un suivi personnalisé. L'autonomie ne remplace pas l'accompagnement. Elle le rend plus puissant.</p>
       </div>
+    </div>
+  </section>
+
+  <!-- 6c · POUR QUI : section en soi -->
+  <section class="clair pour-qui" data-sc-act="flow" id="acte-pour-qui" data-aube-act="Pour qui">
+    <div class="sc-wrap sc-stack" data-sc-in data-sc-stagger="60">
+      <h2 class="sc-display sc-display--lg pour-qui-titre">Est-ce que ce parcours est <span class="accent-italique">pour toi</span> ?</h2>
+      <div class="deux-colonnes">
+        <div class="pour-toi">
+          <p class="etiquette">Pour toi si</p>
+          <p>Tu veux comprendre ce qui se passe dans ton corps, pas seulement recevoir des consignes</p>
+          <p>Tu as essayé des choses qui fonctionnaient pour d'autres, sans résultat pour toi</p>
+          <p>Tu cherches une base solide avant une consultation, ou entre deux</p>
+        </div>
+        <div class="pas-pour-toi">
+          <p class="etiquette">Pas pour toi si</p>
+          <p>Tu cherches un protocole précis à suivre à la lettre, ou une solution rapide : ce parcours demande de l'observation avant l'action</p>
+          <p>Tu vis des symptômes intenses ou inquiétants : commence par consulter</p>
+        </div>
+      </div>
+      <p class="nuance">Ce n'est pas un protocole, et ça ne remplace pas un suivi personnalisé.</p>
+    </div>
+  </section>
+
+  <!-- 6d · LE SHIFT : l'autonomie en gros titre -->
+  <section class="autonomie" data-sc-act="flow" id="acte-autonomie" data-aube-act="Le shift">
+    <div class="sc-wrap" data-sc-in>
+      <h2 class="autonomie-titre">L'autonomie ne remplace pas l'accompagnement.<br><span class="accent-italique">Elle le rend plus puissant.</span></h2>
     </div>
   </section>
 
   <!-- 7 · BIO D'ÉMILIE (placeholders à remplacer) -->
   <section class="bio" data-sc-act="flow" id="acte-bio" data-aube-act="Qui t'accompagne">
-    <div class="sc-wrap" data-sc-in data-sc-stagger="70">
+    <div class="sc-wrap" data-sc-in data-sc-stagger="70" style="overflow: auto;">
       <figure class="bio-photo">
         <img src="assets/emilie-bio.jpg" width="933" height="1400" alt="Émilie Gendron, souriante, devant un mur de bois.">
       </figure>
@@ -297,18 +351,48 @@
     </div>
   </section>
 
+  <!-- 7b · FAQ -->
+  <section class="faq" data-sc-act="flow" id="acte-faq" data-aube-act="Questions">
+    <div class="sc-wrap sc-stack" data-sc-in data-sc-stagger="30">
+      <h2 class="sc-display sc-display--lg">Foire aux <span class="accent-italique">questions</span></h2>
+      <div class="faq-liste">
+        <details><summary>Est-ce une formation médicale ?</summary><div><p>Non. C'est un parcours éducatif.</p><p>Émilie Gendron n'est pas médecin et n'est pas membre du Collège des médecins du Québec. Rien dans ce parcours ne constitue un diagnostic, une prescription ou un traitement.</p><p>Ce que tu y trouves : des explications sur le fonctionnement de ton corps, et des exercices pour observer tes propres signaux. Ce que tu n'y trouves pas : quelqu'un qui te dit ce que tu as ou ce que tu dois prendre.</p><p>Pour tout ce qui relève du diagnostic ou du traitement, ton médecin reste la bonne personne.</p></div></details>
+        <details><summary>Est-ce pertinent si je prends une hormonothérapie ?</summary><div><p>Oui. Rien dans ce parcours ne contredit un traitement médical, et rien ne t'invite à en modifier un.</p><p>Le contenu porte sur le terrain dans lequel tes hormones travaillent : ton sommeil, ton alimentation, ton système nerveux, ta lumière, ton mouvement. Ces leviers restent pertinents peu importe le traitement que tu suis.</p><p>Toute question sur ta médication revient à la personne qui te l'a prescrite.</p></div></details>
+        <details><summary>Est-ce pertinent si je ne sais pas si je suis en périménopause ?</summary><div><p>Probablement, oui.</p><p>Les changements de cette transition commencent souvent bien avant qu'on y mette un nom, parfois dès la fin de la trentaine. Beaucoup de femmes passent des années à chercher ailleurs ce qui relève de cette période.</p><p>Et le contenu ne porte pas uniquement sur les hormones. Il porte sur le sommeil, le système nerveux, l'alimentation et le mouvement, qui concernent ton corps à n'importe quel âge.</p><p>Ce parcours ne détermine pas où tu en es. Il t'aide à comprendre ce que tu observes.</p></div></details>
+        <details><summary>Combien de temps faut-il prévoir ?</summary><div><p>Chaque leçon se lit en 10 à 15 minutes.</p><p>Il n'y a aucun horaire imposé. Certaines femmes lisent tout en deux semaines, d'autres étalent sur six mois. Une leçon par semaine est un rythme confortable.</p><p>Ce qui prend du temps, ce n'est pas la lecture. Ce sont les exercices d'observation, qui demandent quelques jours chacun. C'est là que le parcours travaille vraiment.</p><p>Si tu n'as le temps que d'une leçon par mois, tu auras quand même fait le parcours au bout d'un an. Ce n'est pas un échec, c'est un rythme.</p></div></details>
+        <details><summary>Est-ce uniquement en texte ?</summary><div><p>Oui, les leçons sont en texte.</p><p>C'est un choix, pas une limite. Le texte se lit à ton rythme, se relit facilement, se consulte en dix minutes sans écouteurs et sans besoin d'être seule. Une vidéo t'impose son tempo, un texte suit le tien.</p><p>Certaines leçons renvoient vers des ressources externes, comme des méditations guidées, quand le format audio sert mieux la pratique.</p></div></details>
+        <details><summary>Puis-je suivre la formation sur téléphone ?</summary><div><p>Oui. Tout le parcours est accessible depuis un téléphone, une tablette ou un ordinateur, avec le même compte.</p><p>C'est d'ailleurs le format le plus utilisé : une leçon de dix minutes se lit très bien dans une salle d'attente ou avant de dormir.</p></div></details>
+        <details><summary>Combien de temps ai-je accès ?</summary><div><p>Accès à vie. Tu peux revenir quand tu veux, autant de fois que tu veux.</p><p>C'est important, parce que ton corps va continuer de changer. Une leçon qui ne te parle pas aujourd'hui peut devenir exactement ce dont tu as besoin dans huit mois.</p></div></details>
+        <details><summary>Est-ce approprié si mes symptômes sont intenses ?</summary><div><p>Commence par consulter.</p><p>Des symptômes intenses, nouveaux ou qui t'inquiètent méritent une évaluation par une professionnelle ou un professionnel de la santé. Des saignements très abondants, une douleur importante, une fatigue qui nuit à ton fonctionnement, des étourdissements : ce sont des signaux qui demandent un regard clinique, pas un parcours éducatif.</p><p>Ce parcours viendra après, et il rendra cette consultation plus utile. Tu arriveras avec des observations précises plutôt qu'avec une impression.</p></div></details>
+        <details><summary>Est-ce que ce parcours va me dire quoi faire ?</summary><div><p>Pas exactement, et c'est volontaire.</p><p>Chaque leçon t'explique un mécanisme, puis te propose un exercice d'observation. Les actions concrètes viennent après, une fois que tu as compris ce qui se passe chez toi.</p><p>Si tu cherches une liste d'instructions à suivre à la lettre, ce parcours va te frustrer. Si tu as déjà suivi des listes sans résultat, tu comprendras vite pourquoi on procède autrement.</p></div></details>
+        <details><summary>Est-ce que c'est un régime ?</summary><div><p>Non. Aucun plan alimentaire à suivre, aucun aliment interdit, aucun calcul de calories.</p><p>La section alimentation explique comment les macronutriments parlent à tes hormones, et propose d'observer la composition de tes repas. Le mot d'ordre y est l'observation, pas la restriction.</p></div></details>
+        <details><summary>Est-ce que je vais devoir acheter des suppléments ?</summary><div><p>Non.</p><p>Le parcours parle de nutriments et de leur rôle, mais il ne te vend rien et ne te prescrit rien. La supplémentation y est traitée avec prudence, en rappelant qu'elle devrait reposer sur une évaluation individuelle plutôt que sur une lecture générale.</p></div></details>
+        <details><summary>Il y a beaucoup de leçons. Est-ce que je vais m'y perdre ?</summary><div><p>C'est la crainte la plus fréquente, et elle est légitime.</p><p>Le parcours est organisé en sept piliers, ce qui te donne une carte plutôt qu'une liste. Chaque leçon est autonome et tient en quelques minutes.</p><p>Et le principe de fond joue en ta faveur : tu ne cherches pas à tout appliquer. Tu cherches à identifier où est ton nœud, puis à agir là. Beaucoup de leçons te serviront surtout à comprendre pourquoi elles ne sont pas ton problème.</p></div></details>
+        <details><summary>Est-ce que je dois suivre les leçons dans l'ordre ?</summary><div><p>Commence par l'introduction, elle pose le cadre. Ensuite, tu peux suivre l'ordre proposé ou naviguer selon ce qui te préoccupe.</p><p>Cela dit, les sept piliers s'influencent mutuellement. Si tu ne lis que la section alimentation, tu risques de manquer ce qui explique pourquoi elle ne suffit pas chez toi.</p></div></details>
+        <details><summary>Est-ce que ça remplace une consultation ?</summary><div><p>Non, et ce n'est pas son but.</p><p>Ce parcours te donne la compréhension générale. Une consultation te donne la lecture de ton cas précis : tes analyses, ton historique, ton profil.</p><p>Les deux se complètent. Comprendre ton écosystème te permet d'arriver avec des questions précises, de comprendre ce qu'on te propose, et de l'appliquer en conscience plutôt qu'en suivant des consignes.</p><p>L'autonomie ne remplace pas l'accompagnement. Elle le rend plus puissant.</p></div></details>
+        <details><summary>Est-ce que je peux le suivre si je suis ménopausée ?</summary><div><p>Oui, avec une nuance.</p><p>Les leçons sur le cycle menstruel te concerneront moins directement. Tout le reste (système nerveux, sommeil, alimentation, minéraux, métabolisme, rythme circadien, mouvement) reste entièrement pertinent, et souvent davantage.</p><p>Le parcours est écrit pour la périménopause, mais son fond porte sur le terrain, pas sur une phase précise.</p></div></details>
+      </div>
+      <div class="avis-medical">
+        <p class="avis-titre">Avis de non-responsabilité médicale</p>
+        <p><strong>Objectif éducatif.</strong> L'ensemble des contenus, conseils et tests proposés (y compris HTMA et bilans salivaires) a pour unique but de vous informer et de soutenir votre mieux-être global par des moyens naturels.</p>
+        <p><strong>Limites de pratique.</strong> Je ne suis pas médecin. Conformément à la loi, je ne pose aucun diagnostic, je ne prescris aucun médicament et je ne traite aucune maladie. Les analyses fonctionnelles proposées servent à observer le terrain biologique et non à dépister des pathologies.</p>
+        <p><strong>Votre responsabilité.</strong> Ces recommandations ne remplacent en aucun cas l'avis, le diagnostic ou le traitement d'un professionnel de la santé qualifié. Si vous avez des inquiétudes concernant votre santé ou si vos symptômes persistent, consultez votre médecin.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- 8 · CLÔTURE -->
   <section id="entrer" data-sc-act="pin" data-sc-span="1.15" data-aube-act="Entrer">
     <div data-sc-stage class="close-stage" data-sc-spotlight>
       <div class="close-inner">
         <h2 class="sc-display sc-display--lg" data-sc-cue="0.05" data-sc-kinetic="lines">À la fin, tu sauras lire ton propre système. Cette lecture-là, c'est <span class="zone-soulignee">ta zone de pouvoir</span>.</h2>
         <p class="prix-avenir" data-sc-cue="0.05">Prix : à venir</p>
-        <a class="cta" href="#" data-sc-magnet="0.22" data-sc-cue="0.05" data-sc-rise="0">Entrer dans ta zone de pouvoir</a>
+        <a class="cta" href="https://emilienaturelle.ca/zonedepouvoir" data-sc-magnet="0.22" data-sc-cue="0.05" data-sc-rise="0">Entrer dans ta zone de pouvoir</a>
         <p class="cta-note" data-sc-cue="0.05">Accès à vie, tout disponible dès l'inscription.</p>
       </div>
       <footer class="foot">
         <span class="foot__marque">Émilie Naturelle.</span>
-        <span class="foot__role">Naturopathe certifiée · Coach santé</span>
+        <span class="foot__role">Naturopathe diplômée · Coach santé</span>
       </footer>
     </div>
   </section>
